@@ -25,3 +25,10 @@ cd Phylo-tree_eDNA/
 conda env create -f unesco-trees.yml
 conda env create -f R-unesco-trees.yml
 ```
+
+## Usage
+In order to use the following scripts you can use similar commands as the following ones:
+```
+location_tree_creation.sh yourSamplingLocationName
+family_tree_creation.sh familyTaxonomicName
+```
