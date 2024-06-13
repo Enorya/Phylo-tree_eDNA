@@ -19,4 +19,7 @@ With this method, the ASVs are colored depending if they are ASVs or coming from
 
 ## Installation
 To be able to use the 2 scripts you need to create 2 new conda environments you need to first clone this repository and then use:
-``
+```
+conda env create -f unesco-trees.yml
+conda env create -f R-unesco-trees.yml
+```
