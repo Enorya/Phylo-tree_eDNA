@@ -1,4 +1,4 @@
-name: R-unesco-trees
+name: R-tree-creation
 channels:
   - conda-forge
   - anaconda
