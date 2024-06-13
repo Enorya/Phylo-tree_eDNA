@@ -1,4 +1,4 @@
-name: unesco-trees
+name: tree-creation
 channels:
   - conda-forge
   - anaconda
