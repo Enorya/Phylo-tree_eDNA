@@ -118,9 +118,9 @@ else
         mv ${family}_${amplicon}_genus_short2.fa ${family}_${amplicon}_genus_cut.fa
 
         # Refine sequence file to make it clean
-        ## Activate unesco-trees environment
+        ## Activate tree-creation environment
         echo -e "Refining the sequences and changing sequence's names...\n----------\n"
-        mamba activate unesco-trees
+        conda activate tree-creation
 
         ## Remove duplicated sequences
         seqkit rmdup -s < ${family}_${amplicon}_genus_cut.fa > ${family}_${amplicon}_genus_cut_nodup.fa
@@ -248,7 +248,7 @@ sed -i '1itaxa\tasv' ${family}_info.tsv
 # Plot the tree
 echo -e "Plotting the tree with ggtree package in R...\n"
 ## Activate environment
-mamba activate R-tree-creation
+conda activate R-tree-creation
 
 ## Run R script
 path=`pwd`; Rscript ../plot_tree.r ${path} ${family}.nwk ${family}_info.tsv ${family} ${family}.pdf
