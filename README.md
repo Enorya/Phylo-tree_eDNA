@@ -32,3 +32,9 @@ In order to use the following scripts you can use similar commands as the follow
 location_tree_creation.sh yourSamplingLocationName
 family_tree_creation.sh familyTaxonomicName
 ```
+
+# To do
+
+- Define variables given by the user to determine which file to use to retrieve the ASVs assignments and other needed files
+- Check if possible to adapt the scripts to have other kind of outputs as the ones used to develop the scripts
+- Integrate a check to avoid downloading NCBI data if they are already available (downloaded less than a month ago)
