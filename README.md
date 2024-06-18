@@ -30,7 +30,7 @@ conda env create -f R_tree_creation.yml
 In order to use the following scripts you can use similar commands as the following ones:
 ```
 location_tree_creation.sh yourSamplingLocationName
-family_tree_creation.sh familyTaxonomicName taxonomy_table.tsv sequence_table.tsv amplicon_name forward_primer reverse_primer
+family_tree_creation.sh familyTaxonomicName 'taxonomy_table.tsv' 'sequence_table.tsv' amplicon_name forward_primer reverse_primer
 ```
 
 ## Example use for Family tree
