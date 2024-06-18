@@ -33,8 +33,8 @@ location_tree_creation.sh yourSamplingLocationName
 family_tree_creation.sh familyTaxonomicName taxonomy_table.tsv sequence_table.tsv amplicon_name forward_primer reverse_primer
 ```
 
-### Example use
-If you want to use an amplicon from the default list called `list_primers.tsv`:
+## Example use for Family tree
+### If you want to use an amplicon from the default list called `list_primers.tsv`:
 ```
 family_tree_creation.sh Dasyatidae '../test/tax_table.tsv' '../test/seq_table.tsv' 12SMifish
 ```
@@ -46,7 +46,7 @@ The available amplicons are:
 - Leray-COI from Leray et al. 2013 (313bp) = COI
 - Vert-16S from Vences et al. 2016 (250bp) = 16SVert
 
-If you want to use your own amplicon:
+### If you want to use your own amplicon:
 ```
 family_tree_creation.sh Dasyatidae '../test/tax_table.tsv' '../test/seq_table.tsv' 16S ATTCGCCAAGTCAAG GGGTCTCCAAAAGTCGT
 ```
