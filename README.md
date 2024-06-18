@@ -57,7 +57,6 @@ family_tree_creation.sh Dasyatidae '../test/tax_table.tsv' '../test/seq_table.ts
 # To do
 
 - Give example file for taxonomy table and sequence table
-- Add information in the README to tell to users which amplicon are available by default
 - Check if possible to adapt the scripts to have other kind of inputs as the ones used to develop the scripts
 - Integrate a check to avoid downloading NCBI data if they are already available (downloaded less than a month ago)
 - Idea for a logo: water drop with some DNA strand in it and coming out from it and transforming to a phylogenetic tree
