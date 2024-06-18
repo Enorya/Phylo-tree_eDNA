@@ -25,6 +25,11 @@ cd Phylo-tree_eDNA/
 conda env create -f tree_creation.yml
 conda env create -f R_tree_creation.yml
 ```
+In order to use the TaxonKit dependency you need to download taxonomy information from the NCBI database:
+```
+wget ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz
+tar -xf taxdump.tar.gz
+```
 
 ## Usage
 In order to use the following scripts you can use similar commands as the following ones:
