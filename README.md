@@ -34,10 +34,18 @@ family_tree_creation.sh familyTaxonomicName taxonomy_table.tsv sequence_table.ts
 ```
 
 ### Example use
-If you want to use an amplicon from the default list available `list_primers.tsv`:
+If you want to use an amplicon from the default list called `list_primers.tsv`:
 ```
 family_tree_creation.sh Dasyatidae '../test/tax_table.tsv' '../test/seq_table.tsv' 12SMifish
 ```
+The available amplicons are:
+
+- Mifish-U from Miya et al. 2015 (171bp) = 12SMifish
+- MiMammal-U from Ushio et al. 2017 (171bp) = 12SMimammal
+- Teleo from Valentini et al. 2016 (63bp) = 12STeleo
+- Leray-COI from Leray et al. 2013 (313bp) = COI
+- Vert-16S from Vences et al. 2016 (250bp) = 16SVert
+
 If you want to use your own amplicon:
 ```
 family_tree_creation.sh Dasyatidae '../test/tax_table.tsv' '../test/seq_table.tsv' 16S ATTCGCCAAGTCAAG GGGTCTCCAAAAGTCGT
