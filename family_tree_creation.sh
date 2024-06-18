@@ -1,8 +1,5 @@
 #! /bin/bash
 
-# Move to working directory
-cd /lustre1/project/stg_00026/enora/UNESCO/Phylo-tree_eDNA
-
 # Load conda environment
 source ~/.bashrc
 conda activate tree-creation
