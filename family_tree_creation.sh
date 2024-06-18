@@ -8,31 +8,6 @@ source ~/.bashrc
 conda activate tree-creation
 
 family=$1
-tax_table=$2 # ../pacman-pipeline-results/eDNAexpeditions_batch1_samples/runs/${site}_12SMifish/05-dwca/Full_tax_table_with_lsids.tsv
-amplicon=$3 # 12SMifish
-primer_forward=$4 # GTCGGTAAAACTCGTGCCAGC
-primer_reverse=$5 # CAAACTGGGATTAGATACCCCACTATG
-
-##### Add step to check if tax_table given (if not stop the script execution) #####
-
-
-##### Need to add check step for amplicon to see if present in database and if not check if primer sequences provided, if not stop script #####
-
-
-# Checking primer set for cutadapt
-if [ "$primer_forward" == "" ] && [ "$primer_reverse" == "" ]
-then
-        echo -e "You didn't provide primer sequences so we will use the ones present in our primer file."
-        primer_forward=`grep "$amplicon" primer_file.tsv | cut -f2`
-        primer_reverse=`grep "$amplicon" primer_file.tsv | cut -f3`
-elif ["$primer_forward" == "" ] || [ "$primer_reverse" == "" ]
-then
-        echo -e "You only provided one of the primer sequence so it will not be possible to correctly trim the NCBI reference sequences. Hence$
-        primer_forward=`grep "$amplicon" primer_file.tsv | cut -f2`
-        primer_reverse=`grep "$amplicon" primer_file.tsv | cut -f3`
-else
-        echo -e "The following forward ${primer_forward} and reverse ${primer_reverse} sequences will be used to trim the NCBI reference seque$
-fi
 
 echo -e "Starting tree creation for the $family family identified as the $family_pacman in the pacman pipeline assignation\n"
 
