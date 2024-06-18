@@ -61,7 +61,8 @@ family_tree_creation.sh Dasyatidae '../test/tax_table.tsv' '../test/seq_table.ts
 
 # To do
 
-- Give example file for taxonomy table and sequence table
-- Check if possible to adapt the scripts to have other kinds of inputs as the ones used to develop the scripts
+- Give example file for sequence table
+- Need to implement cutadapt in conda environment
+- Check if possible to adapt the scripts to have other kinds of inputs as the ones used to develop the scripts -> in progress
 - Integrate a check to avoid downloading NCBI data if list of accessions less than 1 year old, otherwise download nucleotide db and extract all accession names (possible to implement parameter in the futur to choose if you want to download or not)
 - Idea for a logo: water drop with some DNA strand in it and coming out from it and transforming to a phylogenetic tree
