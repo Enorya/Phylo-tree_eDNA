@@ -35,8 +35,9 @@ family_tree_creation.sh familyTaxonomicName
 
 # To do
 
-- Define variables given by the user to determine which file to use to retrieve the ASVs assignments and other needed files -> started to implement it but need to test it and need to give example file
-- add "parameter" entered by user to give amplicon information (specifically primers) -> started to implement it but need to test it and need to add default_primer_file.tsv to the repository + add information in the README to tell to users which primers/amplicon are available
+- Give example file for taxonomy table and sequence table
+- Make detection of column number in taxonomy/sequence tables automated
+- Add default_primer_file.tsv to repository + add information in the README to tell to users which amplicon are available by default
 - Check if possible to adapt the scripts to have other kind of inputs as the ones used to develop the scripts
 - Integrate a check to avoid downloading NCBI data if they are already available (downloaded less than a month ago)
 - Idea for a logo: water drop with some DNA strand in it and coming out from it and transforming to a phylogenetic tree
