@@ -30,8 +30,21 @@ conda env create -f R_tree_creation.yml
 In order to use the following scripts you can use similar commands as the following ones:
 ```
 location_tree_creation.sh yourSamplingLocationName
-family_tree_creation.sh familyTaxonomicName
+family_tree_creation.sh familyTaxonomicName taxonomy_table.tsv sequence_table.tsv amplicon_name forward_primer reverse_primer
 ```
+
+### Example use
+If you want to use an amplicon from the default list available `list_primers.tsv`:
+```
+family_tree_creation.sh Dasyatidae '../test/tax_table.tsv' '../test/seq_table.tsv' 12SMifish
+```
+If you want to use your own amplicon:
+```
+family_tree_creation.sh Dasyatidae '../test/tax_table.tsv' '../test/seq_table.tsv' 16S ATTCGCCAAGTCAAG GGGTCTCCAAAAGTCGT
+```
+
+> [!WARNING]
+> The single quotation marks around the table's names are mandatory for proper results, don't forget to put them
 
 # To do
 
