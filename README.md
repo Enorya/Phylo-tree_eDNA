@@ -36,7 +36,6 @@ family_tree_creation.sh familyTaxonomicName
 # To do
 
 - Give example file for taxonomy table and sequence table
-- Make detection of column number in taxonomy/sequence tables automated
 - Add default_primer_file.tsv to repository + add information in the README to tell to users which amplicon are available by default
 - Check if possible to adapt the scripts to have other kind of inputs as the ones used to develop the scripts
 - Integrate a check to avoid downloading NCBI data if they are already available (downloaded less than a month ago)
