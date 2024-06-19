@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# Move to working directory
+cd /lustre1/project/stg_00026/enora/UNESCO/Phylo-tree_eDNA
+
 # Load conda environment
 source ~/.bashrc
 conda activate tree-creation
@@ -75,13 +78,16 @@ mkdir $family
 
 # Check if genus_final.fa exist for this family
 FILE=${family}_genus_final.fa
-if [ -f "$FILE" ]
+old=`stat -c %y -- $FILE | cut -d' ' -f1 | sed 's/-//g'`
+today=`date -I | sed 's/-//g'`
+let DIFF=($(date +%s -d $today)-$(date +%s -d $old))/86400
+if [ -f "$FILE" ] || [ $DIFF -lt 30 ]
 then
 	echo -e "$FILE exists, skipping creation steps of this file.\n"
 	cd $family
 	cp ../${family}_genus_final.fa ${family}_genus_final.fa
 else
-	echo -e "$FILE does not exist, starting creation of the file.\n----------\n"
+	echo -e "$FILE does not exist or is too old, starting creation of the file.\n----------\n"
 	# Retrieve genus names of the chosen family
 	## Get taxon ID of the family
 	echo -e "Retrieving accession numbers of each sequences of interest in each genus of the $family family...\n----------\n"
