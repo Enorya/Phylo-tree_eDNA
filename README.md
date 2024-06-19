@@ -44,6 +44,24 @@ grep "^>" nt.fsa > all_nt_db_acc.txt
 >
 > (last update: 19 June 2024)
 
+## Preparation of the files
+
+### Taxonomy table
+Your file should look like the `tax_table.tsv` available in the test/ directory
+| ASV_name | superkingdom | kingdom | phylum | class | order | family | genus | species | scientificName | taxonRank |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| asv.1 | | Animalia | Chordata | Teleostei | Clupeiformes | Spratelloididae | Jenkinsia | Jenkinsia lamprotaenia | Jenkinsia lamprotaenia | species |
+| asv.2 | Eukaryota | | | | | | | | Incertae sedis | kingdom |
+| asv.3 | | Animalia | Chordata | Elasmobranchii | Myliobatiformes | | | | Myliobatiformes | order |
+
+### Sequence table
+Your file should look like the `seq_table.tsv` available in the test/ directory
+| target_gene | pcr_primer_forward | pcr_primer_reverse | DNA_sequence | occurrenceID |
+| :---: | :---: | :---: | :---: | :---: |
+| 12S | GTCGGTAAAACTCGTGCCAGC | CATAGTGGGGTATCTAATCCCAGTTTG | GTTGGTAAATCTCGTGCCAGCCACCGCGGTCACACGATTAACCCAAGTCAATAGAAGCCGGCGTAAAGAGTGTTTTAGATCACCCCCTCCCCAATAAAGCTAAAACTCACCTGAGTTGTAAAAAACTCCAGTTGACACAAAATAGACTACGAAAGTGGCTTTAACATATCTGAACACACAATAGCTAAGACC | asv.1_S003 |
+| 12S | GTCGGTAAAACTCGTGCCAGC | CATAGTGGGGTATCTAATCCCAGTTTG | CACCGCGGTCACACGATTAACCCAAGTCAATAGAAGCCGGCGTAAAGAGTGTTTTAGATCACCCCCTCCCCAATAAAGCTAAAACTCACCTGAGTTGTAAAAAACTCCAGTTGACACAAAATAGACTACGAAAGTGGCTTTAACATATCTGAACACACAATAGCTAAGACC | asv.1_S026 |
+| 12S | GTCGGTAAAACTCGTGCCAGC | CATAGTGGGGTATCTAATCCCAGTTTG | GGGTTGGTAAATTTCGTGCCAGCCACCGCGGTCACACGATTAACCCAAGTCAATAGAAGCCGGCGTAAAGAGTGTTTTAGATCACCCCCTCCCCAATAAAGCTAAAACTCACCTGAGTTGTAAAAAACTCCAGTTGACACAAAATAGACTACGAAAGTGGCTTTAACATATCTGAACACACAATAGCTAAGACC | asv.3_S017 |
+
 ## Usage
 In order to use the following scripts you can use similar commands as the following ones:
 ```
