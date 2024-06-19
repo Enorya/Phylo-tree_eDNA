@@ -30,6 +30,17 @@ In order to use the TaxonKit dependency you need to download taxonomy informatio
 wget ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz
 tar -xf taxdump.tar.gz
 ```
+In order to download the reference sequences from NCBI you need to prepare a file containing all the accesion numbers and description of the sequence. To do so you can use:
+```
+mkdir nt_db
+cd nt_db
+wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz
+gunzip nt.gz
+grep "^>" nt.fsa > all_nt_db_acc.txt
+```
+> [!NOTE]
+> A similar file is already provided in this repository but it might be good to redo this step if the file is too old.
+> (last update: 19 June 2024)
 
 ## Usage
 In order to use the following scripts you can use similar commands as the following ones:
