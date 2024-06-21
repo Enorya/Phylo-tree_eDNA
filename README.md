@@ -67,13 +67,13 @@ Your file should look like the `seq_table.tsv` available in the test/ directory
 In order to use the following scripts you can use similar commands as the following ones:
 ```
 location_tree_creation.sh yourSamplingLocationName
-family_tree_creation.sh familyTaxonomicName 'taxonomy_table.tsv' 'sequence_table.tsv' amplicon_name forward_primer reverse_primer gene_name length_to_keep
+family_tree_creation.sh familyTaxonomicName 'taxonomy_table.tsv' 'sequence_table.tsv' amplicon_name forward_primer reverse_primer gene_name length_to_keep outgroup_file
 ```
 
 ## Example use for Family tree
 ### If you want to use an amplicon from the default list called `list_primers.tsv`:
 ```
-family_tree_creation.sh Dasyatidae '../test/tax_table.tsv' '../test/seq_table.tsv' 12SMifish "" "" 12S 280
+family_tree_creation.sh Dasyatidae '../test/tax_table.tsv' '../test/seq_table.tsv' 12SMifish "" "" 12S 280 outgroup_sequences/petromyzon_marinus_12SMifish.fa
 ```
 The available amplicons are:
 
@@ -85,7 +85,7 @@ The available amplicons are:
 
 ### If you want to use your own amplicon:
 ```
-family_tree_creation.sh Dasyatidae '../test/tax_table.tsv' '../test/seq_table.tsv' 16SInvert ATTCGCCAAGTCAAG GGGTCTCCAAAAGTCGT 16S 340
+family_tree_creation.sh Dasyatidae '../test/tax_table.tsv' '../test/seq_table.tsv' 16SInvert ATTCGCCAAGTCAAG GGGTCTCCAAAAGTCGT 16S 340 outgroup_sequences/petromyzon_marinus_16S.fa
 ```
 
 > [!WARNING]
