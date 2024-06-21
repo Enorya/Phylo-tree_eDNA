@@ -79,9 +79,9 @@ The available amplicons are:
 
 - Mifish-U from Miya et al. 2015 (171bp) = 12SMifish
 - MiMammal-U from Ushio et al. 2017 (171bp) = 12SMimammal
-- Teleo from Valentini et al. 2016 (63bp) = 12STeleo
+- Teleo from Valentini et al. 2016 (63bp) = Teleo
 - Leray-COI from Leray et al. 2013 (313bp) = COI
-- Vert-16S from Vences et al. 2016 (250bp) = 16SVert
+- Vert-16S from Vences et al. 2016 (250bp) = 16S
 
 ### If you want to use your own amplicon:
 ```
