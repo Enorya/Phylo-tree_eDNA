@@ -8,11 +8,13 @@ source ~/.bashrc
 conda activate tree-creation
 
 family=$1
-tax_table=$2 # '../../results_pacman_pip/eDNAexpeditions_batch1_samples/runs/${site}_12SMifish/05-dwca/Full_tax_table_with_lsids.tsv'
-seq_table=$3 # '../../results_pacman_pip/eDNAexpeditions_batch1_samples/runs/${site}_12SMifish/05-dwca/DNA_extension_table.tsv'
+tax_table=$2 # '../../results_pacman_pip/eDNAexpeditions_batch1_samples/runs/${site}_${amplicon}/05-dwca/Full_tax_table_with_lsids.tsv'
+seq_table=$3 # '../../results_pacman_pip/eDNAexpeditions_batch1_samples/runs/${site}_${amplicon}/05-dwca/DNA_extension_table.tsv'
 amplicon=$4 # 12SMifish
 primer_forward=$5 # GTCGGTAAAACTCGTGCCAGC
 primer_reverse=$6 # CAAACTGGGATTAGATACCCCACTATG
+gene_name=$7 # 12S
+length_amp=$8 # 280
 
 echo -e "Checking the parameters given by the user to be sure that all needed informations are provided.\n"
 
@@ -74,18 +76,18 @@ fi
 
 echo -e "Starting tree creation for the $family family identified as the $family_pacman in the pacman pipeline assignation\n"
 
-mkdir $family
+mkdir ${family}_${amplicon}
 
 # Check if genus_final.fa exist for this family
-FILE=${family}_genus_final.fa
+FILE=${family}_${amplicon}_genus_final.fa
 old=`stat -c %y -- $FILE | cut -d' ' -f1 | sed 's/-//g'`
 today=`date -I | sed 's/-//g'`
 let DIFF=($(date +%s -d $today)-$(date +%s -d $old))/86400
 if [ -f "$FILE" ] || [ $DIFF -lt 30 ]
 then
 	echo -e "$FILE exists, skipping creation steps of this file.\n"
-	cd $family
-	cp ../${family}_genus_final.fa ${family}_genus_final.fa
+	cd ${family}_${amplicon}
+	cp ../${family}_${amplicon}_genus_final.fa ${family}_${amplicon}_genus_final.fa
 else
 	echo -e "$FILE does not exist or is too old, starting creation of the file.\n----------\n"
 	# Retrieve genus names of the chosen family
@@ -95,7 +97,12 @@ else
 	if [ "$id" == "" ]
 	then
 		echo "This family does not exist in the NCBI taxonomy database, checking the corresponding name in the NCBI database..."
-		id=`awk -F'\t' -v fam="$family" ' $6 == fam { print $7 }' *_12SMifish/identified_ASVs.txt | sort | uniq| head -n1 | taxonkit name2taxid --data-dir . | cut -f2`
+		all_taxo=`echo $tax_table | sed 's/${site}/*/g'`
+		for file in `ls ../results_pacman_pip/eDNAexpeditions_batch1_samples/runs/*_${amplicon}/05-dwca/Full_tax_table_with_lsids.tsv`
+		do
+			cat $file >> identified_ASVs_${amplicon}.tsv
+		done
+		id=`awk -F'\t' -v fam="$family" ' $6 == fam { print $7 }' identified_ASVs_${amplicon}.txt | sort | uniq | head -n1 | taxonkit name2taxid --data-dir . | cut -f2 | head -n1`
 		ranklist=`echo $id | taxonkit lineage -R --data-dir . | cut -f2-3 | sed 's/\t/\n/g' | tac`
 		column=`echo $ranklist | head -n1 | tr ';' '\n' | grep -n "^family$" | cut -d':' -f1`
 		family_NCBI=`echo $ranklist | sed 's/no rank/norank/g' | sed 's/cellular organisms/cellularOrganisms/g' | sed 's/ /\n/g' | cut -d';' -f$column | tail -n1`
@@ -107,76 +114,72 @@ else
 	taxonkit list --ids $id -n -r --data-dir . | grep "\[genus\]" | cut -d']' -f2 | sed 's/ //g' | sort | uniq > ${family}_genus.txt
 
 	## Move to family directory
-	cd $family
+	cd ${family}_${amplicon}
 
 	# Retrieve all NCBI sequences containing "mitochondrial" or "mitochondrion" and "12S" or "complete genome"
 	## Retrieve all the accession numbers
 	while read line
 	do
         	genus=`echo $line`
-		grep "$genus" ../all_nt_db_acc.txt | grep -E 'mitochondrion|mitochondrial' > ${genus}_mito.txt # retrieve all sequences containing "mitochondrial" or "mitochondrion" in their name
-		grep -E 'complete genome' ${genus}_mito.txt | sed 's/ >/\n>/g' | cut -d'.' -f1 | cut -d'>' -f2 >> ${family}_acc-num.txt # from these sequences add in the final file the one containing "complete genome"
-		grep -E '12S' ${genus}_mito.txt | sed 's/ >/\n>/g' | cut -d'.' -f1 | cut -d'>' -f2 >> ${family}_acc-num.txt #from these sequences add in the final file the one containing "12S"
+		grep "$genus" ../../tree_creation/all_nt_db_acc.txt | grep -E 'mitochondrion|mitochondrial' > ${genus}_mito.txt # retrieve all sequences containing "mitochondrial" or "mitochondrion" in their name
+		grep -E 'complete genome' ${genus}_mito.txt | sed 's/ >/\n>/g' | cut -d'.' -f1 | cut -d'>' -f2 >> ${family}_${amplicon}_acc-num.txt # from these sequences add in the final file the one containing "complete genome"
+		grep -E "$gene_name" ${genus}_mito.txt | sed 's/ >/\n>/g' | cut -d'.' -f1 | cut -d'>' -f2 >> ${family}_${amplicon}_acc-num.txt #from these sequences add in the final file the one containing "12S"
 		rm ${genus}_mito.txt
 	done < ../${family}_genus.txt
 
 	## Download the sequences retrieved in the accession file
 	echo -e "Downloading all the sequences of the retrieved accession numbers...\n----------\n"
-	sort ${family}_acc-num.txt | uniq > ${family}_acc-num_nodup.txt
+	sort ${family}_${amplicon}_acc-num.txt | uniq > ${family}_${amplicon}_acc-num_nodup.txt
 	mkdir ncbi_acc_files
 	while read line
 	do
 		acc=`echo $line`
 		ncbi-acc-download --format fasta --out ncbi_acc_files/${acc}.fasta $acc
-	done < ${family}_acc-num_nodup.txt
-	cat ncbi_acc_files/*.fasta > ${family}_genus.fasta
+	done < ${family}_${amplicon}_acc-num_nodup.txt
+	cat ncbi_acc_files/*.fasta > ${family}_${amplicon}_genus.fasta
 
 	## Cleaning temporary files
 	rm -r ncbi_acc_files/
 	rm ${family}_acc-num.txt
 
 	## Put all sequences on one line each
-	awk '/^>/ { if(NR>1) print "";  printf("%s\n",$0); next; } { printf("%s",$0);}  END {printf("\n");}' < ${family}_genus.fasta > ${family}_genus_1l.fa
+	awk '/^>/ { if(NR>1) print "";  printf("%s\n",$0); next; } { printf("%s",$0);}  END {printf("\n");}' < ${family}_${amplicon}_genus.fasta > ${family}_${amplicon}_genus_1l.fa
 
 	## Clean
-	rm ${family}_genus.fasta
-	mv ${family}_genus_1l.fa ${family}_genus.fa
+	rm ${family}_${amplicon}_genus.fasta
+	mv ${family}_${amplicon}_genus_1l.fa ${family}_${amplicon}_genus.fa
 
 	# Retrieve sequence of interest
-	## Activate cutadapt environment
 	echo -e "Cutting the retrieved sequences with Cutadapt to reduce the sequences to only the fragment of interest (here Mifish locus)...\n----------\n"
-        mamba activate cutadapt
 
         ## Detect forward primer
-        cutadapt -g $primer_forward -o ${family}_genus_short1.fa -e 4 -j 1 ${family}_genus.fa > ${family}_cutadapt1.log 2>&1
+        cutadapt -g $primer_forward -o ${family}_${amplicon}_genus_short1.fa -e 4 -j 1 ${family}_${amplicon}_genus.fa > ${family}_${amplicon}_cutadapt1.log 2>&1
 
         ## Detect reverse primer
-        cutadapt -a $primer_reverse -o ${family}_genus_short2.fa -e 4 -j 1 ${family}_genus_short1.fa > ${family}_cutadapt2.log 2>&1
+        cutadapt -a $primer_reverse -o ${family}_${amplicon}_genus_short2.fa -e 4 -j 1 ${family}_${amplicon}_genus_short1.fa > ${family}_${amplicon}_cutadapt2.log 2>&1
 
         ## Clean
-        rm ${family}_genus_short1.fa ${family}_genus.fa
-        mv ${family}_genus_short2.fa ${family}_genus_cut.fa
+        rm ${family}_${amplicon}_genus_short1.fa ${family}_${amplicon}_genus.fa
+        mv ${family}_${amplicon}_genus_short2.fa ${family}_${amplicon}_genus_cut.fa
 
         # Refine sequence file to make it clean
-	## Activate unesco-trees environment
 	echo -e "Refining the sequences and changing sequence's names...\n----------\n"
-	mamba activate tree-creation
 
 	## Remove duplicated sequences
-	seqkit rmdup -s < ${family}_genus_cut.fa > ${family}_genus_cut_nodup.fa
+	seqkit rmdup -s < ${family}_${amplicon}_genus_cut.fa > ${family}_${amplicon}_genus_cut_nodup.fa
 
 	## Put all sequences on one line each
-	awk '/^>/ { if(NR>1) print "";  printf("%s\n",$0); next; } { printf("%s",$0);}  END {printf("\n");}' < ${family}_genus_cut_nodup.fa > ${family}_genus_cut_nodup_1l.fa
+	awk '/^>/ { if(NR>1) print "";  printf("%s\n",$0); next; } { printf("%s",$0);}  END {printf("\n");}' < ${family}_${amplicon}_genus_cut_nodup.fa > ${family}_${amplicon}_genus_cut_nodup_1l.fa
 
 	## Remove special characters from names and empty sequences
-	sed -i 's/://g' ${family}_genus_cut_nodup_1l.fa | sed 's/(//g' | sed 's/)//g' | sed 's/-//g'
-	sed -i '/^[[:space:]]*$/d' ${family}_genus_cut_nodup_1l.fa
+	sed -i 's/://g' ${family}_${amplicon}_genus_cut_nodup_1l.fa | sed 's/(//g' | sed 's/)//g' | sed 's/-//g'
+	sed -i '/^[[:space:]]*$/d' ${family}_${amplicon}_genus_cut_nodup_1l.fa
 
 	## Remove “PREDICTED” words to be able to retrieve full species names
-	sed -i 's/PREDICTED //g' ${family}_genus_cut_nodup_1l.fa
+	sed -i 's/PREDICTED //g' ${family}_${amplicon}_genus_cut_nodup_1l.fa
 
-	rm ${family}_genus_cut.fa ${family}_genus_cut_nodup.fa
-	mv ${family}_genus_cut_nodup_1l.fa ${family}_genus_cut.fa
+	rm ${family}_${amplicon}_genus_cut.fa ${family}_${amplicon}_genus_cut_nodup.fa
+	mv ${family}_${amplicon}_genus_cut_nodup_1l.fa ${family}_${amplicon}_genus_cut.fa
 
 	# Rename the sequences
 	while read line
@@ -185,23 +188,23 @@ else
 		if [ -z $grep_res ]
 		then
 			name=`echo $line | cut -d' ' -f2-3`
-			grep_name=`grep " ${name} " ${family}_genus_cut.fa | wc -l`
+			grep_name=`grep " ${name} " ${family}_${amplicon}_genus_cut.fa | wc -l`
 			if [ $grep_name -eq 1 ]
 			then
-				sed -i "s|$line|>${name}|g" ${family}_genus_cut.fa
+				sed -i "s|$line|>${name}|g" ${family}_${amplicon}_genus_cut.fa
 			else
-				last=`grep "${name}_" ${family}_genus_cut.fa | tail -n1 | cut -d'_' -f2`
+				last=`grep "${name}_" ${family}_${amplicon}_genus_cut.fa | tail -n1 | cut -d'_' -f2`
 				num=$(( ${last} + 1 ))
 				new_name=${name}_${num}
-				sed -i "s|$line|>${new_name}|g" ${family}_genus_cut.fa
+				sed -i "s|$line|>${new_name}|g" ${family}_${amplicon}_genus_cut.fa
 			fi
 		fi
-	done < ${family}_genus_cut.fa
+	done < ${family}_${amplicon}_genus_cut.fa
 
 	## Remove empty fasta records
-	awk 'BEGIN {RS = ">" ; FS = "\n" ; ORS = ""} $2 {print ">"$0}' ${family}_genus_cut.fa > ../${family}_genus_final.fa
+	awk 'BEGIN {RS = ">" ; FS = "\n" ; ORS = ""} $2 {print ">"$0}' ${family}_${amplicon}_genus_cut.fa > ../${family}_${amplicon}_genus_final.fa
 
-	cp ../${family}_genus_final.fa ${family}_genus_final.fa
+	cp ../${family}_${amplicon}_genus_final.fa ${family}_${amplicon}_genus_final.fa
 fi
 echo -e "\nFile containing NCBI sequences for the family $family is created.\n\n----------\n----------\n"
 
@@ -211,68 +214,78 @@ echo -e "Starting to retrieve ASVs assigned till at least the $family family...\
 while read line
 do
 	site=`echo $line`
-	loc_asv="../${site}_12SMifish/${family}_asv.txt"
+	loc_asv="../${site}_${amplicon}/identified_ASVs.txt"
 	if [ -f "$loc_asv" ]
 	then
-		echo -e "\n"
+		echo -e "File containing all identified ASVs till at least family level for $site is already created, checking if file with ASVs of the family is available...\n\n----------\n"
 	else
 		echo -e "File containing all identified ASVs till at least family level for $site is missing, starting to create it...\n\n----------\n"
-		mkdir ../${site}_12SMifish/
+		mkdir ../${site}_${amplicon}/
 		taxo=`echo $tax_table | sed 's/${site}/'$site'/g'`
+		taxo=`echo $taxo | sed 's/${amplicon}/'$amplicon'/g'`
 		colTax=`awk -v RS='\t' '/taxonRank/{print NR; exit}' "$taxo"`
-		awk -F'\t' -v colTax=$colTax ' $colTax == "genus" || $colTax == "species" || $colTax == "family" { print $0 }' "$taxo" > ../${site}_12SMifish/identified_ASVs.txt
+		awk -F'\t' -v colTax=$colTax ' $colTax == "genus" || $colTax == "species" || $colTax == "family" { print $0 }' "$taxo" > ../${site}_${amplicon}/identified_ASVs.txt
 	fi
-	awk -F'\t' -v f=$family ' $7 == f { print $1 }' ../${site}_12SMifish/identified_ASVs.txt > ../${site}_12SMifish/${family}_asv.txt
-	while read line
-	do
-		asv=`echo $line`
-		colSpe=`awk -v RS='\t' '/scientificName/{print NR; exit}' "$taxo"`
-		species=`grep -P "^$asv\t" $taxo | cut -f$colSpe | sed 's/ /_/g'`
-		echo ">"$asv"_"$species"_${site}" >> ../${site}_12SMifish/${family}_asv.fa
-		seq=`echo $seq_table | sed 's/${site}/'$site'/g'`
-		grep "${asv}_" $seq | head -n 1 | cut -f9 >> ../${site}_12SMifish/${family}_asv.fa
-	done < ../${site}_12SMifish/${family}_asv.txt
+	fam_asv="../${site}_${amplicon}/${family}_{amplicon}_asv.fa"
+	if [ -f "$fam_asv" ]
+	then
+		echo -e "File containing all ASVs till at least family level for $family family of $site is available, retrieving the sequences from all sites...\n\n----------\n"
+	else
+		echo -e "File containing all ASVs till at least family level for $family family of $site is missing, starting to create it...\n\n----------\n"
+		taxo=`echo $tax_table | sed 's/${site}/'$site'/g'`
+                taxo=`echo $taxo | sed 's/${amplicon}/'$amplicon'/g'`
+		colFam=`awk -v RS='\t' '/family/{print NR; exit}' "$taxo"`
+		awk -F'\t' -v f=$family -v name=$colFam ' $name == f { print $1 }' ../${site}_${amplicon}/identified_ASVs.txt > ../${site}_${amplicon}/${family}_${amplicon}_asv.txt
+		while read line
+		do
+			asv=`echo $line`
+			colSpe=`awk -v RS='\t' '/scientificName/{print NR; exit}' "$taxo"`
+			species=`grep -P "^$asv\t" $taxo | cut -f$colSpe | sed 's/ /_/g'`
+			echo ">"$asv"_"$species"_${site}" >> ../${site}_${amplicon}/${family}_${amplicon}_asv.fa
+			seq=`echo $seq_table | sed 's/${site}/'$site'/g'`
+			seq=`echo $seq | sed 's/${amplicon}/'$amplicon'/g'`
+			colSeq=`awk -v RS='\t' '/DNA_sequence/{print NR; exit}' "$seq"`
+			grep "${asv}_" $seq | head -n 1 | cut -f$colSeq >> ../${site}_${amplicon}/${family}_${amplicon}_asv.fa
+		done < ../${site}_${amplicon}/${family}_${amplicon}_asv.txt
+	fi
 done < ../all_sites.txt
 
 ## Put all the ASVs in the same file
-cat ../*_12SMifish/${family}_asv.fa > all_${family}_asv.fa
+cat ../*_${amplicon}/${family}_${amplicon}_asv.fa > all_${family}_${amplicon}_asv.fa
 
 ## Add the ASVs to the final fasta file for the alignment
-cat all_${family}_asv.fa >> ${family}_genus_final.fa
+cat all_${family}_${amplicon}_asv.fa >> ${family}_${amplicon}_genus_final.fa
 
 # Add the outgroup
 echo -e "Adding the outgroup...\n----------\n"
-cat ../U11880_cut2.fa >> ${family}_genus_final.fa
+cat ../petromyzon_marinus_${amplicon}.fa >> ${family}_${amplicon}_genus_final.fa
 
 # Remove the sequences longer than 200 nucleotides
 echo -e "Refining the final fasta file containing ASVs and sequences from NCBI database...\n"
-seqkit seq -M 280 ${family}_genus_final.fa | awk '/^>/ { if(NR>1) print "";  printf("%s\n",$0); next; } { printf("%s",$0);}  END {printf("\n");}' > ${family}_genus_final_short.fa
-
-# Remove duplicated sequences
-seqkit rmdup -s < ${family}_genus_final_short.fa > ${family}_genus_final_clean.fa
+seqkit seq -M $length_amp ${family}_${amplicon}_genus_final.fa | awk '/^>/ { if(NR>1) print "";  printf("%s\n",$0); next; } { printf("%s",$0);}  END {printf("\n");}' > ${family}_${amplicon}_genus_final_short.fa
 
 # Align the sequences with Mafft
 echo -e "\nAligning with MAFFT...\n"
-mafft --thread -1 --preservecase --adjustdirection ${family}_genus_final_clean.fa > ${family}.aln.fa 2> ${family}_mafft.log
+mafft --thread -1 --preservecase --adjustdirection ${family}_${amplicon}_genus_final_short.fa > ${family}_${amplicon}.aln.fa 2> ${family}_${amplicon}_mafft.log
 
 ## Replace spaces by underscores
-sed -i 's/ /_/g' ${family}.aln.fa
+sed -i 's/ /_/g' ${family}_${amplicon}.aln.fa
 
 # Curate the alignment with Gblocks
 echo -e "Curating the alignment with Gblocks...\n"
-Gblocks ${family}.aln.fa -t=d -b4=5 -b5=h -e=.gb > ${family}_gblock.log 2>&1
+Gblocks ${family}_${amplicon}.aln.fa -t=d -b4=5 -b5=h -e=.gb > ${family}_${amplicon}_gblock.log 2>&1
 
 # Reconstruct phylogenetic tree with FastTree
 echo -e "Constructing the phylogenetic tree with FastTree...\n"
-FastTreeMP -gtr -nt ${family}.aln.fa.gb > ${family}.nwk 2>${family}_FastTree.log
+FastTreeMP -gtr -nt ${family}_${amplicon}.aln.fa.gb > ${family}_${amplicon}.nwk 2>${family}_${amplicon}_FastTree.log
 
 ## Remove "_R_"
-sed -i 's/_R_//g' ${family}.nwk
+sed -i 's/_R_//g' ${family}_${amplicon}.nwk
 
 # Create information file to differentiate ASVs and sequences from NCBI database
 ## Retrieve all names in the tree
 echo -e "Creating information file to color differently ASVs and sequences from NCBI database...\n----------\n"
-grep "^>" ${family}.aln.fa.gb | sed 's/>//g' | sed 's/_R_//g' > all_labels.txt
+grep "^>" ${family}_${amplicon}.aln.fa.gb | sed 's/>//g' | sed 's/_R_//g' > all_labels.txt
 
 ## For each name determine if it's an ASV or not and put the information in a file
 while read line
@@ -281,14 +294,14 @@ do
 	grep_res=`echo $name | grep "asv."`
 	if [ -z $grep_res ]
 	then
-		echo -e "${name}\tdb_name" >> ${family}_info.tsv
+		echo -e "${name}\tdb_name" >> ${family}_${amplicon}_info.tsv
 	else
-		echo -e "${name}\tasv" >> ${family}_info.tsv
+		echo -e "${name}\tasv" >> ${family}_${amplicon}_info.tsv
 	fi
 done < all_labels.txt
 
 ## Add column's names
-sed -i '1itaxa\tasv' ${family}_info.tsv
+sed -i '1itaxa\tasv' ${family}_${amplicon}_info.tsv
 
 # Plot the tree
 echo -e "Plotting the tree with ggtree package in R...\n"
@@ -296,13 +309,13 @@ echo -e "Plotting the tree with ggtree package in R...\n"
 mamba activate R-tree-creation
 
 ## Run R script
-path=`pwd`; Rscript ../plot_family_tree.r ${path} ${family}.nwk ${family}_info.tsv ${family} ${family}.pdf
+path=`pwd`; Rscript ../plot_family_tree.r ${path} ${family}_${amplicon}.nwk ${family}_${amplicon}_info.tsv ${family} ${family}_${amplicon}.pdf
 
 ## Clean temporary files
 rm Rplots.pdf
 
 # Check if final file produced
-ENDFILE=${family}.pdf
+ENDFILE=${family}_${amplicon}.pdf
 if [ -f "$ENDFILE" ]
 then
 	echo -e "\nTree creation script worked, $ENDFILE is available in ${family}/ folder!"
