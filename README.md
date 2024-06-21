@@ -41,7 +41,7 @@ grep "^>" nt.fsa > all_nt_db_acc.txt
 > [!NOTE]
 > A similar file is already provided in this repository but it might be good to redo this step if the file is too old.
 >
-> (last update: 19 June 2024)
+> (last update: 19 June 2024 with 102960590 sequences)
 
 ## Preparation of the files
 
