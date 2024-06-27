@@ -1,22 +1,89 @@
 #! /bin/bash
 
-# Move to working directory
-cd /lustre1/project/stg_00026/enora/UNESCO/Phylo-tree_eDNA
+##############
+#### Help ####
+##############
+Help()
+{
+	# Display Help
+	echo "This script create a phylogenetic tree by taking as input a taxonomic family name, the name of the used amplicon and a taxonomy and sequence tables."
+	echo
+	echo "Syntax: script.sh [-t|s|a|f|r|g|l|h]"
+	echo
+	echo "Options:"
+	echo "-n	name of family taxonomic group (mandatory)"
+	echo "-t	taxonomy table (mandatory)"
+	echo "-s	sequence table (mandatory)"
+	echo "-a	amplicon name (mandatory)"
+	echo "-f	forward primer sequence"
+	echo "-r	reverse primer sequence"
+	echo "-g	gene name (if different than amplicon name)"
+	echo "-l	maximum length of the amplicon (advice: length of the amplicon for outgroup + 100bp)"
+	echo "-h	display this help message."
+}
+
+######################
+#### Main program ####
+######################
+
+###############################
+#### Process input options ####
+###############################
+
+while getopts hn:t:s:a:f:r:g:l: option
+do
+	case $option in
+		(h) # display Help
+			Help
+			exit;;
+		(n) # enter family taxonomic name
+			family=$OPTARG;;
+		(t) # enter taxonomy table name
+			tax_table=$OPTARG;;
+		(s) # enter sequence table name
+			seq_table=$OPTARG;;
+		(a) # enter amplicon name
+			amplicon=$OPTARG;;
+		(f) # forward primer sequence
+			primer_forward=$OPTARG;;
+		(r) # reverse primer sequence
+			primer_reverse=$OPTARG;;
+		(g) # gene name
+			gene_name=$OPTARG;;
+		(l) # maximum length of the amplicon
+			length_amp=$OPTARG;;
+		(\?) # Invalid option
+			echo -e "\nError: Invalid option\n\n"
+			Help
+			exit;;
+	esac
+done
 
 # Load conda environment
 source ~/.bashrc
 conda activate tree-creation
 
-family=$1
-tax_table=$2 # '../../results_pacman_pip/eDNAexpeditions_batch1_samples/runs/${site}_${amplicon}/05-dwca/Full_tax_table_with_lsids.tsv'
-seq_table=$3 # '../../results_pacman_pip/eDNAexpeditions_batch1_samples/runs/${site}_${amplicon}/05-dwca/DNA_extension_table.tsv'
-amplicon=$4 # 12SMifish
-primer_forward=$5 # GTCGGTAAAACTCGTGCCAGC
-primer_reverse=$6 # CAAACTGGGATTAGATACCCCACTATG
-gene_name=$7 # 12S
-length_amp=$8 # 280
+# family=$1
+# tax_table=$2 # '../../results_pacman_pip/eDNAexpeditions_batch1_samples/runs/${site}_${amplicon}/05-dwca/Full_tax_table_with_lsids.tsv'
+# seq_table=$3 # '../../results_pacman_pip/eDNAexpeditions_batch1_samples/runs/${site}_${amplicon}/05-dwca/DNA_extension_table.tsv'
+# amplicon=$4 # 12SMifish
+# primer_forward=$5 # GTCGGTAAAACTCGTGCCAGC
+# primer_reverse=$6 # CAAACTGGGATTAGATACCCCACTATG
+# gene_name=$7 # 12S
+# length_amp=$8 # 280
 
 echo -e "Checking the parameters given by the user to be sure that all needed informations are provided.\n"
+
+# Checking if family name available
+
+if [ "$family" == "" ]
+then
+        echo -e "Family name not detected. Please provide a family taxonomy group name."
+        exit 1
+else
+        echo -e "Family name detected: $family"
+fi
+
 
 # Checking if taxonomy table available
 
@@ -25,7 +92,7 @@ then
 	echo -e "Taxonomy table not detected. Please provide a file containing taxonomy information of the ASVs."
 	exit 1
 else
-	echo -e "Taxonomy table detected."
+	echo -e "Taxonomy table detected: $tax_table"
 fi
 
 # Checking if sequence table available
@@ -35,7 +102,7 @@ then
         echo -e "Sequence table not detected. Please provide a file containing the sequence of each ASV."
 	exit 1
 else
-        echo -e "Sequence table detected."
+        echo -e "Sequence table detected: $seq_table"
 fi
 
 # Checking if amplicon name provided and if primer sequences available if primer sequence not in list
@@ -56,6 +123,20 @@ else
 			echo -e "You didn't provide the forward and reverse primers of your amplicon but the amplicon name you provided is in the default list. Default primers from the list will be used for the trimming of the reference sequences.\n"
 			primer_forward=`grep "$amplicon" list_primers.txt | cut -f2`
 			primer_reverse=`grep "$amplicon" list_primers.txt | cut -f3`
+			if [ "$gene_name" == "" ]
+			then
+				echo -e "You didn't provide the real gene name but the amplicon name you provided is in the default list. Default gene name from the list will be used to retrieve the reference sequences.\n"
+				gene_name=`grep "$amplicon" list_primers.txt | cut -f4`
+			else
+				echo -e "Gene name detected. The following gene name will be used to retrieve the reference sequences: $gene_name"
+			fi
+			if [ "$length_amp" == "" ]
+                        then
+                                echo -e "You didn't provide the maximum length of the amplicon but the amplicon name you provided is in the default list. Default maximum length from the list will be used to remove too long sequences before alignment.\n"
+                                length_amp=`grep "$amplicon" list_primers.txt | cut -f5`
+                        else
+                                echo -e "Maximum length of the amplicon detected. The following length will be used to remove too long sequences before the alignment: $length_amp"
+                        fi
 		fi
 	elif ["$primer_forward" == "" ] || [ "$primer_reverse" == "" ]
 	then
@@ -68,9 +149,49 @@ else
                         echo -e "You only provided one primer for your amplicon but the amplicon name you provided is in the default list. Default primers from the list will be used for the trimming of the reference sequences.\n"
                         primer_forward=`grep "$amplicon" list_primers.txt | cut -f2`
                         primer_reverse=`grep "$amplicon" list_primers.txt | cut -f3`
+			if [ "$gene_name" == "" ]
+                        then
+                                echo -e "You didn't provide the real gene name but the amplicon name you provided is in the default list. Default gene name from the list will be used to retrieve the reference sequences.\n"
+                                gene_name=`grep "$amplicon" list_primers.txt | cut -f4`
+                        else
+                                echo -e "Gene name detected. The following gene name will be used to retrieve the reference sequences: $gene_name"
+			fi
+			if [ "$length_amp" == "" ]
+			then
+				echo -e "You didn't provide the maximum length of the amplicon but the amplicon name you provided is in the default list. Default maximum length from the list will be used to remove too long sequences before alignment.\n"
+				length_amp=`grep "$amplicon" list_primers.txt | cut -f5`
+			else
+				echo -e "Maximum length of the amplicon detected. The following length will be used to remove too long sequences before the alignment: $length_amp"
+			fi
                 fi
 	else
 		echo -e "The following forward ${primer_forward} and reverse ${primer_reverse} sequences will be used to trim the NCBI reference sequences.\n"
+		if [ "$gene_name" == "" ]
+		then
+			if [ -z $grep_amp ]
+			then
+				echo -e "You didn't provide the real gene name and the amplicon name you provided is not in the default list. Please provide a gene name to be able to retrieve the reference sequences.\n"
+				exit 1
+			else
+                                echo -e "You didn't provide the real gene name but the amplicon name you provided is in the default list. Default gene name from the list will be used to retrieve the reference sequences.\n"
+                                gene_name=`grep "$amplicon" list_primers.txt | cut -f4`
+			fi
+		else
+			echo -e "Gene name detected. The following gene name will be used to retrieve the reference sequences: $gene_name\n"
+		fi
+		if [ "$length_amp" == "" ]
+		then
+			if [ -z $grep_amp ]
+			then
+				echo -e "You didn't provide the maximum length of the amplicon and the amplicon name you provided is not in the default list. Please provide a maximum length of the amplicon to be able to remove too long sequences before alignment.\n"
+				exit 1
+			else
+				echo -e "You didn't provide the maximum length of the amplicon but the amplicon name you provided is in the default list. Default maximum length from the list will be used to remove too long sequences before alignment.\n"
+				length_amp=`grep "$amplicon" list_primers.txt | cut -f5`
+			fi
+		else
+			echo -e "Maximum length of the amplicon detected. The following length will be used to remove too long sequences before the alignment: $length_amp\n"
+		fi
 	fi
 fi
 
@@ -80,16 +201,24 @@ mkdir ${family}_${amplicon}
 
 # Check if genus_final.fa exist for this family
 FILE=${family}_${amplicon}_genus_final.fa
-old=`stat -c %y -- $FILE | cut -d' ' -f1 | sed 's/-//g'`
-today=`date -I | sed 's/-//g'`
-let DIFF=($(date +%s -d $today)-$(date +%s -d $old))/86400
-if [ -f "$FILE" ] || [ $DIFF -lt 30 ]
+if [ -f "$FILE" ]
 then
-	echo -e "$FILE exists, skipping creation steps of this file.\n"
-	cd ${family}_${amplicon}
-	cp ../${family}_${amplicon}_genus_final.fa ${family}_${amplicon}_genus_final.fa
+	old=`stat -c %y -- $FILE | cut -d' ' -f1 | sed 's/-//g'`
+	today=`date -I | sed 's/-//g'`
+	let DIFF=($(date +%s -d $today)-$(date +%s -d $old))/86400
+	if [ $DIFF -lt 30 ]
+	then
+		echo -e "$FILE exists, skipping creation steps of this file.\n"
+		cd ${family}_${amplicon}
+		cp ../${family}_${amplicon}_genus_final.fa ${family}_${amplicon}_genus_final.fa
+	elif [ $DIFF -ge 30 ]
+	then
+		echo -e "$FILE exists but is too old, going to delete $FILE. Please relaunch the analysis after this.\n"
+		rm $FILE
+		exit 1
+	fi
 else
-	echo -e "$FILE does not exist or is too old, starting creation of the file.\n----------\n"
+	echo -e "$FILE does not exist, starting creation of the file.\n----------\n"
 	# Retrieve genus names of the chosen family
 	## Get taxon ID of the family
 	echo -e "Retrieving accession numbers of each sequences of interest in each genus of the $family family...\n----------\n"
@@ -97,12 +226,14 @@ else
 	if [ "$id" == "" ]
 	then
 		echo "This family does not exist in the NCBI taxonomy database, checking the corresponding name in the NCBI database..."
-		all_taxo=`echo $tax_table | sed 's/${site}/*/g'`
-		for file in `ls ../results_pacman_pip/eDNAexpeditions_batch1_samples/runs/*_${amplicon}/05-dwca/Full_tax_table_with_lsids.tsv`
+		all_taxo=`echo $tax_table | sed 's/${site}/'*'/g'`
+		all_taxo=`echo $all_taxo | sed 's/${amplicon}/'$amplicon'/g'`
+		all_taxo=`echo $all_taxo | sed 's|../../|../|g'`
+		for file in `ls $all_taxo`
 		do
 			cat $file >> identified_ASVs_${amplicon}.tsv
 		done
-		id=`awk -F'\t' -v fam="$family" ' $6 == fam { print $7 }' identified_ASVs_${amplicon}.txt | sort | uniq | head -n1 | taxonkit name2taxid --data-dir . | cut -f2 | head -n1`
+		id=`awk -F'\t' -v fam="$family" ' $6 == fam { print $7 }' identified_ASVs_${amplicon}.tsv | sort | uniq | head -n1 | taxonkit name2taxid --data-dir . | cut -f2 | head -n1`
 		ranklist=`echo $id | taxonkit lineage -R --data-dir . | cut -f2-3 | sed 's/\t/\n/g' | tac`
 		column=`echo $ranklist | head -n1 | tr ';' '\n' | grep -n "^family$" | cut -d':' -f1`
 		family_NCBI=`echo $ranklist | sed 's/no rank/norank/g' | sed 's/cellular organisms/cellularOrganisms/g' | sed 's/ /\n/g' | cut -d';' -f$column | tail -n1`
@@ -150,7 +281,7 @@ else
 	mv ${family}_${amplicon}_genus_1l.fa ${family}_${amplicon}_genus.fa
 
 	# Retrieve sequence of interest
-	echo -e "Cutting the retrieved sequences with Cutadapt to reduce the sequences to only the fragment of interest (here Mifish locus)...\n----------\n"
+	echo -e "Cutting the retrieved sequences with Cutadapt to reduce the sequences to only the fragment of interest...\n----------\n"
 
         ## Detect forward primer
         cutadapt -g $primer_forward -o ${family}_${amplicon}_genus_short1.fa -e 4 -j 1 ${family}_${amplicon}_genus.fa > ${family}_${amplicon}_cutadapt1.log 2>&1
