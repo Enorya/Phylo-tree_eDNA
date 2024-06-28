@@ -18,7 +18,7 @@ This method gives the possibility to plot all the assigned ASVs of one specific 
 With this method, the ASVs are colored depending if they are ASVs or coming from the NCBI database. Also, the names of the ASVs sequences in the tree contain the location where they come from.
 
 <p align="center">
-<img src="https://github.com/Enorya/Phylo-tree_eDNA/figures/pipeline_figure_v4.png" alt="family_tree_pipeline" width="500"/>
+<img src="https://github.com/Enorya/Phylo-tree_eDNA/blob/main/figures/family_tree_github.jpg" alt="family_tree_pipeline" width="500"/>
 </p>
 
 ## Installation
