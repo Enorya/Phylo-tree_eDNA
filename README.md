@@ -38,11 +38,12 @@ Cutadapt`)
 Seqkit)
 	step5(NCBI final fasta file)
 	step6(ASVs fasta file)
+	step7(Final fasta file)
 
 	amplicon --> step1 -->|Download| step2 -->|Trim| step3 -->|Remove duplicates| step4 -->|Rename| step5
 	family --> step1
-	amplicon & Assign & Seq --> step6
-	family --> step6
+	amplicon & Assign & Seq & Family --> step6
+	step5 & Out & step 6 --> step7
 
 ```
 
