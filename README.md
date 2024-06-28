@@ -56,15 +56,15 @@ Rscript)
         	step1 -->|Download| step2 -->|Trim| step3 -->|Remove duplicates| step4 -->|Rename| step5
 	end
 	subgraph subgraph2
-		direction TB
+		direction LR
         	step7 -->|Remove too long sequences| step8 -->|Align| step9 -->|Curate| step10
 	end
 	amplicon --> step1
 	family --> step1
 	amplicon & Assign & Seq & Family --> step6
 	step5 & Out & step6 --> step7
-	subgraph2 --> step12 --> step13
-	subgraph2 -->|Create tree| step11 --> step13
+	step10 --> step12 --> step13
+	step10 -->|Create tree| step11 --> step13
 
 ```
 
