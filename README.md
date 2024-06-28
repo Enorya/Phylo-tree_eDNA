@@ -55,7 +55,8 @@ Rscript)
 	family --> step1
 	amplicon & Assign & Seq & Family --> step6
 	step5 & Out & step6 --> step7 -->|Remove too long sequences| step8 -->|Align| step9 -->|Curate| step10 -->|Create tree| step11
-	step10 --> step12 & step11 --> step13
+	step10 --> step12 --> step13
+	step11 --> step13
 
 ```
 
