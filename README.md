@@ -29,8 +29,14 @@ flowchart TB
 TaxonKit`)
 	step2(`NCBI fasta file
 ncbi-acc-download`)
+	step3(`Trimmed NCBI fasta file
+Cutadapt`)
+	step4(`Trimmed NCBI fasta file
+without duplicates
+Seqkit`)
+	step5(`NCBI final fasta file`)
 
-	amplicon --> step1 --> step2
+	amplicon --> step1 --> step2 --> step3 --> step4 --> step5
 	family --> step1
 
 ```
