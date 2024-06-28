@@ -21,6 +21,20 @@ With this method, the ASVs are colored depending if they are ASVs or coming from
 <img src="https://github.com/Enorya/Phylo-tree_eDNA/blob/main/figures/family_tree_github.jpg" alt="family_tree_pipeline" width="500"/>
 </p>
 
+```mermaid
+flowchart TB
+	amplicon>Amplicon name]
+	family>Family name]
+	step1(`NCBI accession list
+(TaxonKit)`)
+	step2(`NCBI fasta file
+(ncbi-acc-download)`)
+
+	amplicon --> step1 --> step2
+	family --> step1
+
+```
+
 ## Installation
 To be able to use the 2 scripts you need to create 2 new conda environments you need to first clone this repository and then use:
 ```
