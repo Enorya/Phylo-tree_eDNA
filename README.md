@@ -24,12 +24,12 @@ flowchart TB
 	Assign>Assignment table]
 	Seq>Sequence table]
 	Out>Outgroup fasta file]
-	step1(`NCBI accession list
-TaxonKit`)
-	step2(`NCBI fasta file
-ncbi-acc-download`)
-	step3(`NCBI fasta file
-Cutadapt`)
+	step1(NCBI accession list
+TaxonKit)
+	step2(NCBI fasta file
+ncbi-acc-download)
+	step3(NCBI fasta file
+Cutadapt)
 	step4(NCBI fasta file
 Seqkit)
 	step5(NCBI final fasta file)
@@ -59,9 +59,9 @@ Rscript)
 	family:::red --> step1
 	amplicon:::red & Assign:::red & Seq:::red & family:::red --> step6
 	step5 & Out:::red & step6 --> step7
-	step10 -.-> step12 --> step13
-	step10 -.->|Create tree| step11 --> step13
-	classDef red fill:#e3c2a0
+	step10 -.-> step12:::blue --> step13
+	step10 -.->|Create tree| step11:::blue --> step13
+	classDef red fill:#c06910
 	classDef blue fill:#52bccc
 
 ```
