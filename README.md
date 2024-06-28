@@ -52,7 +52,7 @@ FastTreeMP)
 Rscript)
 
 	subgraph Retrieve_reference_sequences
-		direction TB
+		direction LR
         	step1 -->|Download| step2 -->|Trim| step3 -->|Remove duplicates| step4 -->|Rename| step5
 	end
 	subgraph Align_fasta_file
