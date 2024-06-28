@@ -61,7 +61,7 @@ Rscript)
 	end
 	amplicon --> step1
 	family --> step1
-	amplicon & Assign & Seq & Family --> step6
+	amplicon & Assign & Seq & family --> step6
 	step5 & Out & step6 --> step7
 	step10 --> step12 --> step13
 	step10 -->|Create tree| step11 --> step13
