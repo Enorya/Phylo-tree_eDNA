@@ -51,8 +51,12 @@ FastTreeMP)
 	step13(Tree in PDF
 Rscript)
 
-	amplicon --> step1 -->|Download| step2 -->|Trim| step3 -->|Remove duplicates| step4 -->|Rename| step5
-	family --> step1
+	subgraph subgraph1
+		direction TB
+        	step1 -->|Download| step2 -->|Trim| step3 -->|Remove duplicates| step4 -->|Rename| step5
+	end
+	amplicon --> subgraph1
+	family --> subgraph1
 	amplicon & Assign & Seq & Family --> step6
 	step5 & Out & step6 --> step7 -->|Remove too long sequences| step8 -->|Align| step9 -->|Curate| step10 -->|Create tree| step11
 	step10 --> step12 --> step13
