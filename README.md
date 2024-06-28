@@ -26,9 +26,9 @@ flowchart TB
 	amplicon>Amplicon name]
 	family>Family name]
 	step1(`NCBI accession list
-(TaxonKit)`)
+TaxonKit`)
 	step2(`NCBI fasta file
-(ncbi-acc-download)`)
+ncbi-acc-download`)
 
 	amplicon --> step1 --> step2
 	family --> step1
