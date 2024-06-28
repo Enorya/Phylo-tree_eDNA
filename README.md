@@ -49,11 +49,11 @@ Rscript)
 
 	subgraph "Retrieve reference sequences"
 		direction LR
-        	step1:::blue -.->|Download| step2:::blue -.->|Trim| step3:::blue -.->|Remove duplicates| step4:::blue -.->|Rename| step5
+        	step1:::blue -.->|Download| step2:::blue -.->|Trim| step3:::blue -.->|Remove duplicates| step4:::blue -.->|Rename| step5:::blue
 	end
 	subgraph "Align fasta file"
 		direction LR
-        	step7 -.->|Remove too long sequences| step8 -.->|Align| step9 -.->|Curate| step10
+        	step7:::blue -.->|Remove too long sequences| step8:::blue -.->|Align| step9:::blue -.->|Curate| step10:::blue
 	end
 	amplicon:::red --> step1
 	family:::red --> step1
@@ -61,7 +61,7 @@ Rscript)
 	step5 & Out:::red & step6 --> step7
 	step10 -.-> step12 --> step13
 	step10 -.->|Create tree| step11 --> step13
-	classDef red stroke:#f00
+	classDef red fill:#e3c2a0
 	classDef blue fill:#52bccc
 
 ```
