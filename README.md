@@ -1,5 +1,5 @@
 # Phylo-tree_eDNA
-Scripts to create phylogenetic trees based on taxonomic assignments of Environmental DNA (eDNA) data in order to **detect possible miss-assigned** ASVs or **refine the taxonomic assignment** of some ASVs.
+Scripts to create phylogenetic trees based on taxonomic assignments of Environmental DNA (eDNA) data in order to **detect possible misassigned** ASVs or **refine the taxonomic assignment** of some ASVs.
 
 ## Description
 This repository contains 2 different scripts to plot phylogenetic trees based on taxonomic assignments of Environmental DNA (eDNA) data.
