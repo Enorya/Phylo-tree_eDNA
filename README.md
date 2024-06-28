@@ -22,7 +22,7 @@ With this method, the ASVs are colored depending if they are ASVs or coming from
 </p>
 
 ```mermaid
-flowchart TB
+flowchart LR
 	amplicon>Amplicon name]
 	family>Family name]
 	step1(`NCBI accession list
