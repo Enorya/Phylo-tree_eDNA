@@ -63,17 +63,28 @@ Your file should look like the `seq_table.tsv` available in the test/ directory
 > [!NOTE]
 > Columns with PCR primer sequences are not mandatory in this table.
 
-## Usage
-In order to use the following scripts you can use similar commands as the following ones:
+## Usage of Family tree script
+Here is a description of all the parameters of this tool:
 ```
-location_tree_creation.sh yourSamplingLocationName
-family_tree_creation.sh familyTaxonomicName 'taxonomy_table.tsv' 'sequence_table.tsv' amplicon_name forward_primer reverse_primer gene_name length_to_keep outgroup_file
+This script create a phylogenetic tree by taking as input a taxonomic family name, the name of the used amplicon and a taxonomy and sequence tables.
+
+Syntax: script.sh [-t|s|a|f|r|g|l|h]
+
+Options:
+-n        name of family taxonomic group (mandatory)
+-t        taxonomy table (mandatory)
+-s        sequence table (mandatory)
+-a        amplicon name (mandatory)
+-f        forward primer sequence
+-r        reverse primer sequence
+-g        gene name (if different than amplicon name)
+-l        maximum length of the amplicon (advice: length of the amplicon for outgroup + 100bp)
+-h        display this help message.
 ```
 
-## Example use for Family tree
-### If you want to use an amplicon from the default list called `list_primers.tsv`:
+For example, if you want to use an amplicon from the default list called `list_primers.tsv`:
 ```
-family_tree_creation.sh Dasyatidae '../test/tax_table.tsv' '../test/seq_table.tsv' 12SMifish "" "" 12S 280 outgroup_sequences/petromyzon_marinus_12SMifish.fa
+family_tree_creation.sh -n Dasyatidae -t '../test/tax_table.tsv' -s '../test/seq_table.tsv' -a 12SMifish -o '../outgroup_sequences/petromyzon_marinus_12SMifish.fa'
 ```
 The available amplicons are:
 
@@ -83,16 +94,23 @@ The available amplicons are:
 - Leray-COI from Leray et al. 2013 (313bp) = COI
 - Vert-16S from Vences et al. 2016 (250bp) = 16S
 
-### If you want to use your own amplicon:
+
+If you want to use your own amplicon:
 ```
-family_tree_creation.sh Dasyatidae '../test/tax_table.tsv' '../test/seq_table.tsv' 16SInvert ATTCGCCAAGTCAAG GGGTCTCCAAAAGTCGT 16S 340 outgroup_sequences/petromyzon_marinus_16S.fa
+family_tree_creation.sh -n Dasyatidae -t '../test/tax_table.tsv' -s '../test/seq_table.tsv' -a 16SVert -f AGTCCCGAAATATAAT -r GCTGTTGTGCCCGAAG -g 16S -l 350 -o '../outgroup_sequences/petromyzon_marinus_12SMifish.fa'
 ```
 
+If you want to use a different maximum length of the amplicon than the one listed in `list_primers.tsv`:
+```
+family_tree_creation.sh -n Dasyatidae -t '../test/tax_table.tsv' -s '../test/seq_table.tsv' -a CO1 -l 380 -o outgroup_sequences/petromyzon_marinus_16S.fa
+```
+> [!TIP]
+> Each parameter listed in the help message can be modified, even when using default amplicons, but if you want to change the primers' sequences, you need to change both, otherwise the default sequences will be used.
+
 > [!WARNING]
-> The single quotation marks around the table's names are mandatory for proper results, don't forget to put them
+> The single quotation marks around the table's names are mandatory for proper results, don't forget to put them!
 
 # To do
 
 - Check if possible to adapt the scripts to have other kinds of inputs as the ones used to develop the scripts -> in progress
-- Integrate a check to avoid downloading NCBI data if list of accessions less than 1 year old, otherwise download nucleotide db and extract all accession names (possible to implement parameter in the futur to choose if you want to download or not)
 - Idea for a logo: water drop with some DNA strand in it and coming out from it and transforming to a phylogenetic tree
