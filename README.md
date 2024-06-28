@@ -22,7 +22,7 @@ With this method, the ASVs are colored depending if they are ASVs or coming from
 </p>
 
 ```mermaid
-flowchart LR
+flowchart
 	amplicon>Amplicon name]
 	family>Family name]
 	Assign>Assignment table]
@@ -51,11 +51,11 @@ FastTreeMP)
 	step13(Tree in PDF
 Rscript)
 
-	subgraph subgraph1
+	subgraph Retrieve_reference_sequences
 		direction TB
         	step1 -->|Download| step2 -->|Trim| step3 -->|Remove duplicates| step4 -->|Rename| step5
 	end
-	subgraph subgraph2
+	subgraph Align_fasta_file
 		direction TB
         	step7 -->|Remove too long sequences| step8 -->|Align| step9 -->|Curate| step10
 	end
