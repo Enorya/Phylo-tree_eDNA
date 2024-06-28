@@ -18,7 +18,7 @@ This method gives the possibility to plot all the assigned ASVs of one specific 
 With this method, the ASVs are colored depending if they are ASVs or coming from the NCBI database. Also, the names of the ASVs sequences in the tree contain the location where they come from.
 
 ```mermaid
-flowchart TB
+flowchart LR
 	amplicon>Amplicon name]
 	family>Family name]
 	Assign>Assignment table]
