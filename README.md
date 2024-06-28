@@ -47,11 +47,11 @@ FastTreeMP)
 	step13(Tree in PDF
 Rscript)
 
-	subgraph Retrieve_reference_sequences
+	subgraph "Retrieve reference sequences"
 		direction LR
         	step1 -.->|Download| step2 -.->|Trim| step3 -.->|Remove duplicates| step4 -.->|Rename| step5
 	end
-	subgraph Align_fasta_file
+	subgraph "Align fasta file"
 		direction LR
         	step7 -.->|Remove too long sequences| step8 -.->|Align| step9 -.->|Curate| step10
 	end
