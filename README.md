@@ -58,11 +58,12 @@ Rscript)
 	amplicon:::red --> step1
 	family:::red --> step1
 	amplicon:::red & Assign:::red & Seq:::red & family:::red --> step6
-	step5 & Out:::red & step6 --> step7
-	step10 -.-> step12:::blue --> step13
+	step5 & Out:::red & step6:::blue --> step7
+	step10 -.-> step12:::blue --> step13:::green
 	step10 -.->|Create tree| step11:::blue --> step13
 	classDef red fill:#c06910
 	classDef blue fill:#52bccc
+	classDef green fill:#459522
 
 ```
 
