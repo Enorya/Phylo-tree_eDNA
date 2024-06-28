@@ -49,18 +49,18 @@ Rscript)
 
 	subgraph Retrieve_reference_sequences
 		direction LR
-        	step1 -->|Download| step2 -->|Trim| step3 -->|Remove duplicates| step4 -->|Rename| step5
+        	step1 -.->|Download| step2 -.->|Trim| step3 -.->|Remove duplicates| step4 -.->|Rename| step5
 	end
 	subgraph Align_fasta_file
 		direction LR
-        	step7 -->|Remove too long sequences| step8 -->|Align| step9 -->|Curate| step10
+        	step7 -.->|Remove too long sequences| step8 -.->|Align| step9 -.->|Curate| step10
 	end
-	amplicon:::red -.-> step1
-	family:::red -.-> step1
-	amplicon:::red & Assign:::red & Seq:::red & family:::red -.-> step6
-	step5 & Out:::red & step6 -.-> step7
-	step10 --> step12 -.-> step13
-	step10 -->|Create tree| step11 -.-> step13
+	amplicon:::red --> step1
+	family:::red --> step1
+	amplicon:::red & Assign:::red & Seq:::red & family:::red --> step6
+	step5 & Out:::red & step6 --> step7
+	step10 -.-> step12 --> step13
+	step10 -.->|Create tree| step11 --> step13
 	classDef red stroke:#f00
 
 ```
