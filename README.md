@@ -43,7 +43,7 @@ Seqkit)
 	amplicon --> step1 -->|Download| step2 -->|Trim| step3 -->|Remove duplicates| step4 -->|Rename| step5
 	family --> step1
 	amplicon & Assign & Seq & Family --> step6
-	step5 & Out & step 6 --> step7
+	step5 & Out & step6 --> step7
 
 ```
 
