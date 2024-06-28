@@ -59,8 +59,8 @@ Rscript)
 		direction TB
         	step7 -->|Remove too long sequences| step8 -->|Align| step9 -->|Curate| step10
 	end
-	amplicon --> subgraph1
-	family --> subgraph1
+	amplicon --> step1
+	family --> step1
 	amplicon & Assign & Seq & Family --> step6
 	step5 & Out & step6 --> subgraph2
 	subgraph2 --> step12 --> step13
