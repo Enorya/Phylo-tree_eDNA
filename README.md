@@ -110,7 +110,10 @@ family_tree_creation.sh -n Dasyatidae -t '../test/tax_table.tsv' -s '../test/seq
 > [!WARNING]
 > The single quotation marks around the table's names are mandatory for proper results, don't forget to put them!
 
+## Usage of Location tree script
+> [!CAUTION]
+> This script is not finalised for the moment, please take this into consideration if you wish to use it.
+
 # To do
 
-- Check if possible to adapt the scripts to have other kinds of inputs as the ones used to develop the scripts -> in progress
 - Idea for a logo: water drop with some DNA strand in it and coming out from it and transforming to a phylogenetic tree
