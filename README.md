@@ -25,6 +25,9 @@ With this method, the ASVs are colored depending if they are ASVs or coming from
 flowchart LR
 	amplicon>Amplicon name]
 	family>Family name]
+	Assign>Assignment table]
+	Seq>Sequence table]
+	Out>Outgroup fasta file]
 	step1(`NCBI accession list
 TaxonKit`)
 	step2(`NCBI fasta file
@@ -34,9 +37,12 @@ Cutadapt`)
 	step4(NCBI fasta file
 Seqkit)
 	step5(NCBI final fasta file)
+	step6(ASVs fasta file)
 
 	amplicon --> step1 -->|Download| step2 -->|Trim| step3 -->|Remove duplicates| step4 -->|Rename| step5
 	family --> step1
+	amplicon & Assign & Seq --> step6
+	family --> step6
 
 ```
 
