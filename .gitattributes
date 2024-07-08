@@ -1,0 +1,2 @@
+all_nt_db_acc.txt filter=lfs diff=lfs merge=lfs -text
+all_nt_db_acc.txt.gz filter=lfs diff=lfs merge=lfs -text
