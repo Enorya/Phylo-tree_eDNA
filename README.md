@@ -90,7 +90,8 @@ grep "^>" nt.fsa > all_nt_db_acc.txt
 ```
 > [!NOTE]
 > A similar file is already provided in this repository but it might be good to redo this step if the file is too old.
->
+> If you want to use the provided version don't forget to decompress it first using `gunzip all_nt_db_acc.txt.gz`
+> 
 > (last update: 19 June 2024 with 102960590 sequences)
 
 ## Preparation of the files
@@ -118,23 +119,24 @@ Here is a description of all the parameters of this tool:
 ```
 This script create a phylogenetic tree by taking as input a taxonomic family name, the name of the used amplicon and a taxonomy and sequence tables.
 
-Syntax: script.sh [-t|s|a|f|r|g|l|h]
+Syntax: script.sh [-t|s|a|f|r|g|l|o|h]
 
 Options:
--n        name of family taxonomic group (mandatory)
--t        taxonomy table (mandatory)
--s        sequence table (mandatory)
--a        amplicon name (mandatory)
--f        forward primer sequence
--r        reverse primer sequence
--g        gene name (if different than amplicon name)
--l        maximum length of the amplicon (advice: length of the amplicon for outgroup + 100bp)
--h        display this help message.
+-n      name of family taxonomic group (mandatory)
+-t      taxonomy table (mandatory)
+-s      sequence table (mandatory)
+-a      amplicon name (mandatory)
+-f      forward primer sequence
+-r      reverse primer sequence
+-g      gene name (if different than amplicon name)
+-l      maximum length of the amplicon (advice: length of the amplicon for outgroup + 100bp)
+-o      outgroup fasta file already formatted
+-h      display this help message.
 ```
 
 For example, if you want to use an amplicon from the default list called `list_primers.tsv`:
 ```
-family_tree_creation.sh -n Dasyatidae -t '../test/tax_table.tsv' -s '../test/seq_table.tsv' -a 12SMifish -o '../outgroup_sequences/petromyzon_marinus_12SMifish.fa'
+family_tree_creation.sh -n Dasyatidae -t '../test/tax_table.tsv' -s '../test/seq_table.tsv' -a 12SMifish
 ```
 The available amplicons are:
 
