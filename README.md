@@ -115,6 +115,24 @@ Your file should look like the `seq_table.tsv` available in the test/ directory
 > [!NOTE]
 > Columns with PCR primer sequences are not mandatory in this table.
 
+### Outgroup fasta file (if different than the one provided
+1. Download your sequence using the accession number of the mitochondrial genome you want to use:
+```
+# Activate the conda environment
+conda activate tree_creation
+
+# Download the sequence
+ncbi-acc-download --format fasta U11880
+
+# Rename your file
+mv U11880.fa petromyzon_marinus.fa
+```
+2. Cut your mitochondrial genome using your primer sequences:
+```
+cutadapt -g GTCGGTAAAACTCGTGCCAGC -o petromyzon_marinus_cut1.fa -e 4 -j 1 petromyzon_marinus.fa
+cutadapt -a CAAACTGGGATTAGATACCCCACTATG -o petromyzon_marinus_12SMifish.fa -e 4 -j 1 petromyzon_marinus_cut1.fa
+```
+
 ## Usage of Family tree script
 Here is a description of all the parameters of this tool:
 ```
