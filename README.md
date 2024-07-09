@@ -97,7 +97,7 @@ grep "^>" nt.fsa > all_nt_db_acc.txt
 
 ## Preparation of the files
 
-### Taxonomy table
+### Taxonomy tables
 Your file should look like the `tax_table.tsv` available in the test/ directory
 | ASV_name | superkingdom | kingdom | phylum | class | order | family | genus | species | scientificName | taxonRank |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -105,7 +105,13 @@ Your file should look like the `tax_table.tsv` available in the test/ directory
 | asv.2 | Eukaryota | | | | | | | | Incertae sedis | kingdom |
 | asv.3 | | Animalia | Chordata | Elasmobranchii | Myliobatiformes | | | | Myliobatiformes | order |
 
-### Sequence table
+> [!IMPORTANT]
+> The name of your taxonomy tables should contain the site (=location) name.
+>
+> (See examples in the `test/` folder)
+
+
+### Sequence tables
 Your file should look like the `seq_table.tsv` available in the test/ directory
 | target_gene | pcr_primer_forward | pcr_primer_reverse | DNA_sequence | occurrenceID |
 | :---: | :---: | :---: | :---: | :---: |
