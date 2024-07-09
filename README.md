@@ -98,7 +98,7 @@ grep "^>" nt.fsa > all_nt_db_acc.txt
 ## Preparation of the files
 
 ### Site file
-You need to prepare a file containing the names of all your locations (one by line):
+You need to prepare a file called `all_sites.txt` containing the names of all your locations (one by line):
 ```
 site1
 site2
