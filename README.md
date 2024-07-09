@@ -125,7 +125,7 @@ Your file should look like the `seq_table.tsv` available in the test/ directory
 > Columns with PCR primer sequences are not mandatory in this table.
 
 > [!IMPORTANT]
-> The name of your taxonomy and sequence tables should contain the site (=location) name and these names should match the ones in your `all_sites.txt` file
+> The names of your taxonomy and sequence tables should contain the site (=location) name and these names should match the ones in your `all_sites.txt` file
 >
 > (See examples in the `test/` folder)
 
