@@ -102,9 +102,9 @@ grep "^>" nt.fsa > all_nt_db_acc.txt
 > 
 > (last update: 19 June 2024 with 102960590 sequences)
 
-You can use the following command to test the installation (it should take around 15-20 minutes to run):
+You can use the following command to test the installation (it should take around 10 minutes to run):
 ```
-family_tree_creation.sh -n Pomacentridae -t '../test/${site}_${amplicon}_tax_table.tsv' -s '../test/${site}_${amplicon}_seq_table.tsv' -a 12SMifish
+family_tree_creation.sh -n Dasyatidae -t '../test/${site}_${amplicon}_tax_table.tsv' -s '../test/${site}_${amplicon}_seq_table.tsv' -a 12SMifish
 ```
 
 ## Preparation of the files
