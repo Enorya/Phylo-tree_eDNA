@@ -24,7 +24,7 @@ flowchart LR
 	Assign>Assignment table]
 	Seq>Sequence table]
 	Out>Outgroup fasta file]
-	step1(NCBI accession list
+	step1(<font color=black>NCBI accession list
 TaxonKit)
 	step2(NCBI fasta file
 ncbi-acc-download)
