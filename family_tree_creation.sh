@@ -114,52 +114,52 @@ then
 else
 	if [ "$primer_forward" == "" ] && [ "$primer_reverse" == "" ]
 	then
-		grep_amp=`grep -o -P "^$amplicon\t" list_primers.txt`
+		grep_amp=`grep -o -P "^$amplicon\t" list_primers.tsv`
 		if [ -z $grep_amp ]
 		then
 			echo -e "You didn't provide the forward and reverse primers of your amplicon and the amplicon name you provided is not in the default list. Please provide the primer sequences or use an amplicon name from the list."
 			exit 1
 		else
 			echo -e "You didn't provide the forward and reverse primers of your amplicon but the amplicon name you provided is in the default list. Default primers from the list will be used for the trimming of the reference sequences.\n"
-			primer_forward=`grep "$amplicon" list_primers.txt | cut -f2`
-			primer_reverse=`grep "$amplicon" list_primers.txt | cut -f3`
+			primer_forward=`grep "$amplicon" list_primers.tsv | cut -f2`
+			primer_reverse=`grep "$amplicon" list_primers.tsv | cut -f3`
 			if [ "$gene_name" == "" ]
 			then
 				echo -e "You didn't provide the real gene name but the amplicon name you provided is in the default list. Default gene name from the list will be used to retrieve the reference sequences.\n"
-				gene_name=`grep "$amplicon" list_primers.txt | cut -f4`
+				gene_name=`grep "$amplicon" list_primers.tsv | cut -f4`
 			else
 				echo -e "Gene name detected. The following gene name will be used to retrieve the reference sequences: $gene_name"
 			fi
 			if [ "$length_amp" == "" ]
                         then
                                 echo -e "You didn't provide the maximum length of the amplicon but the amplicon name you provided is in the default list. Default maximum length from the list will be used to remove too long sequences before alignment.\n"
-                                length_amp=`grep "$amplicon" list_primers.txt | cut -f5`
+                                length_amp=`grep "$amplicon" list_primers.tsv | cut -f5`
                         else
                                 echo -e "Maximum length of the amplicon detected. The following length will be used to remove too long sequences before the alignment: $length_amp"
                         fi
 		fi
 	elif ["$primer_forward" == "" ] || [ "$primer_reverse" == "" ]
 	then
-		grep_amp=`grep -o -P "^$amplicon\t" list_primers.txt`
+		grep_amp=`grep -o -P "^$amplicon\t" list_primers.tsv`
                 if [ -z $grep_amp ]
                 then
                         echo -e "You only provided one primer for your amplicon and the amplicon name you provided is not in the default list. Please provide both forward and reverse primer sequences or use an amplicon name from the list."
                         exit 1
                 else
                         echo -e "You only provided one primer for your amplicon but the amplicon name you provided is in the default list. Default primers from the list will be used for the trimming of the reference sequences.\n"
-                        primer_forward=`grep "$amplicon" list_primers.txt | cut -f2`
-                        primer_reverse=`grep "$amplicon" list_primers.txt | cut -f3`
+                        primer_forward=`grep "$amplicon" list_primers.tsv | cut -f2`
+                        primer_reverse=`grep "$amplicon" list_primers.tsv | cut -f3`
 			if [ "$gene_name" == "" ]
                         then
                                 echo -e "You didn't provide the real gene name but the amplicon name you provided is in the default list. Default gene name from the list will be used to retrieve the reference sequences.\n"
-                                gene_name=`grep "$amplicon" list_primers.txt | cut -f4`
+                                gene_name=`grep "$amplicon" list_primers.tsv | cut -f4`
                         else
                                 echo -e "Gene name detected. The following gene name will be used to retrieve the reference sequences: $gene_name"
 			fi
 			if [ "$length_amp" == "" ]
 			then
 				echo -e "You didn't provide the maximum length of the amplicon but the amplicon name you provided is in the default list. Default maximum length from the list will be used to remove too long sequences before alignment.\n"
-				length_amp=`grep "$amplicon" list_primers.txt | cut -f5`
+				length_amp=`grep "$amplicon" list_primers.tsv | cut -f5`
 			else
 				echo -e "Maximum length of the amplicon detected. The following length will be used to remove too long sequences before the alignment: $length_amp"
 			fi
@@ -174,7 +174,7 @@ else
 				exit 1
 			else
                                 echo -e "You didn't provide the real gene name but the amplicon name you provided is in the default list. Default gene name from the list will be used to retrieve the reference sequences.\n"
-                                gene_name=`grep "$amplicon" list_primers.txt | cut -f4`
+                                gene_name=`grep "$amplicon" list_primers.tsv | cut -f4`
 			fi
 		else
 			echo -e "Gene name detected. The following gene name will be used to retrieve the reference sequences: $gene_name\n"
@@ -187,7 +187,7 @@ else
 				exit 1
 			else
 				echo -e "You didn't provide the maximum length of the amplicon but the amplicon name you provided is in the default list. Default maximum length from the list will be used to remove too long sequences before alignment.\n"
-				length_amp=`grep "$amplicon" list_primers.txt | cut -f5`
+				length_amp=`grep "$amplicon" list_primers.tsv | cut -f5`
 			fi
 		else
 			echo -e "Maximum length of the amplicon detected. The following length will be used to remove too long sequences before the alignment: $length_amp\n"
