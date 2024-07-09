@@ -1,0 +1,623 @@
+ASV_name	superkingdom	kingdom	phylum	class	order	family	genus	species	scientificName	taxonRank
+asv.25		Animalia	Chordata	Elasmobranchii	Myliobatiformes	Dasyatidae			Dasyatidae	family
+asv.26		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Monodactylidae	Monodactylus	Monodactylus argenteus	Monodactylus argenteus	species
+asv.27		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.28		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.29		Animalia	Chordata	Elasmobranchii	Myliobatiformes	Dasyatidae			Dasyatidae	family
+asv.30		Animalia							Metazoa	subkingdom
+asv.31		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae	Gnatholepis	Gnatholepis anjerensis	Gnatholepis anjerensis	species
+asv.32		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Monodactylidae	Monodactylus	Monodactylus argenteus	Monodactylus argenteus	species
+asv.33		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.34		Animalia	Chordata	Teleostei	Carangaria incertae sedis	Polynemidae			Polynemidae	family
+asv.35		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae	Gnatholepis	Gnatholepis anjerensis	Gnatholepis anjerensis	species
+asv.37		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.38		Animalia	Chordata	Teleostei	Kurtiformes	Apogonidae			Apogonidae	family
+asv.39		Animalia	Chordata	Teleostei	Carangaria incertae sedis	Polynemidae			Polynemidae	family
+asv.40		Animalia	Chordata	Teleostei	Perciformes	Serranidae	Epinephelus		Epinephelus	genus
+asv.41		Animalia	Chordata	Teleostei	Carangaria incertae sedis	Polynemidae			Polynemidae	family
+asv.42		Animalia	Chordata	Elasmobranchii	Carcharhiniformes	Carcharhinidae	Carcharhinus	Carcharhinus melanopterus	Carcharhinus melanopterus	species
+asv.43		Animalia	Chordata	Teleostei	Atheriniformes	Atherinidae	Hypoatherina	Hypoatherina tsurugae	Hypoatherina tsurugae	species
+asv.44		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Haemulidae			Haemulidae	family
+asv.45		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Rhinecanthus	Rhinecanthus aculeatus	Rhinecanthus aculeatus	species
+asv.46		Animalia							Metazoa	subkingdom
+asv.47		Animalia	Chordata	Teleostei	Clupeiformes	Spratelloididae	Spratelloides	Spratelloides delicatulus	Spratelloides delicatulus	species
+asv.48		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.49		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.51		Animalia	Chordata	Teleostei	Perciformes	Serranidae	Epinephelus		Epinephelus	genus
+asv.52		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Caranx	Caranx sexfasciatus	Caranx sexfasciatus	species
+asv.53		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.54		Animalia	Chordata	Teleostei	Albuliformes	Albulidae	Albula	Albula glossodonta	Albula glossodonta	species
+asv.55		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Chrysiptera	Chrysiptera brownriggii	Chrysiptera brownriggii	species
+asv.56		Animalia	Chordata						Actinopteri	superclass
+asv.57		Animalia	Chordata	Elasmobranchii	Carcharhiniformes	Carcharhinidae	Carcharhinus	Carcharhinus melanopterus	Carcharhinus melanopterus	species
+asv.58		Animalia	Chordata	Teleostei	Perciformes	Serranidae	Epinephelus		Epinephelus	genus
+asv.59		Animalia	Chordata	Teleostei	Atheriniformes	Atherinidae	Hypoatherina	Hypoatherina tsurugae	Hypoatherina tsurugae	species
+asv.60		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Haemulidae			Haemulidae	family
+asv.61		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.62		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Caesionidae	Pterocaesio	Pterocaesio tile	Pterocaesio tile	species
+asv.63		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Rhinecanthus	Rhinecanthus aculeatus	Rhinecanthus aculeatus	species
+asv.64		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.65		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.66		Animalia	Chordata	Teleostei	Clupeiformes	Spratelloididae	Spratelloides	Spratelloides delicatulus	Spratelloides delicatulus	species
+asv.67		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.68		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Rhinecanthus	Rhinecanthus aculeatus	Rhinecanthus aculeatus	species
+asv.69		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Trachinotus		Trachinotus	genus
+asv.70		Chromista	Bacillariophyta	Bacillariophyceae	Naviculales	Naviculaceae	Navicula	Navicula minima	Navicula minima	species
+asv.71		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.72		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.73		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Caranx	Caranx sexfasciatus	Caranx sexfasciatus	species
+asv.74		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Chrysiptera	Chrysiptera brownriggii	Chrysiptera brownriggii	species
+asv.75		Animalia	Chordata						Actinopteri	superclass
+asv.76		Animalia	Chordata						Chordata	phylum
+asv.77		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Rhinecanthus	Rhinecanthus rectangulus	Rhinecanthus rectangulus	species
+asv.78		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Caranx	Caranx ignobilis	Caranx ignobilis	species
+asv.79		Animalia	Chordata						Chordata	phylum
+asv.80		Animalia	Chordata	Mammalia					Mammalia	class
+asv.81		Animalia	Chordata	Teleostei	Mulliformes	Mullidae	Parupeneus	Parupeneus multifasciatus	Parupeneus multifasciatus	species
+asv.82		Animalia	Chordata	Teleostei	Perciformes	Serranidae	Pseudanthias	Pseudanthias dispar	Pseudanthias dispar	species
+asv.83		Animalia	Chordata						Actinopteri	superclass
+asv.85		Animalia	Chordata	Teleostei	Centrarchiformes	Kyphosidae	Kyphosus	Kyphosus cinerascens	Kyphosus cinerascens	species
+asv.86		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.88		Animalia	Chordata						Actinopteri	superclass
+asv.89		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Caesionidae	Pterocaesio	Pterocaesio tile	Pterocaesio tile	species
+asv.90		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.91		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.92		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Stethojulis	Stethojulis bandanensis	Stethojulis bandanensis	species
+asv.93		Animalia	Chordata						Actinopteri	superclass
+asv.94		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Scaridae	Scarus		Scarus	genus
+asv.95		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.96		Animalia	Chordata						Chordata	phylum
+asv.97		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.98		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Naso	Naso lopezi	Naso lopezi	species
+asv.99		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.100		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus	Lutjanus fulvus	Lutjanus fulvus	species
+asv.101		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.102		Animalia	Chordata	Teleostei	Beloniformes	Belonidae	Tylosurus	Tylosurus crocodilus	Tylosurus crocodilus	species
+asv.103		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Cymolutes	Cymolutes praetextatus	Cymolutes praetextatus	species
+asv.104		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.105		Animalia	Chordata	Teleostei	Acanthuriformes	Ephippidae	Platax	Platax orbicularis	Platax orbicularis	species
+asv.106		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.107		Animalia	Chordata						Chordata	phylum
+asv.108		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Rhinecanthus	Rhinecanthus rectangulus	Rhinecanthus rectangulus	species
+asv.109		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Caranx	Caranx ignobilis	Caranx ignobilis	species
+asv.110		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Scaridae	Cetoscarus	Cetoscarus bicolor	Cetoscarus bicolor	species
+asv.111		Animalia	Chordata						Chordata	phylum
+asv.112		Animalia	Chordata						Chordata	phylum
+asv.113		Animalia	Chordata	Mammalia					Mammalia	class
+asv.114		Animalia	Chordata	Teleostei	Mulliformes	Mullidae	Parupeneus	Parupeneus multifasciatus	Parupeneus multifasciatus	species
+asv.115		Animalia	Chordata	Teleostei	Clupeiformes	Spratelloididae	Spratelloides	Spratelloides delicatulus	Spratelloides delicatulus	species
+asv.116		Animalia	Chordata	Teleostei	Perciformes	Serranidae	Pseudanthias	Pseudanthias dispar	Pseudanthias dispar	species
+asv.117		Animalia	Chordata	Elasmobranchii	Myliobatiformes	Dasyatidae			Dasyatidae	family
+asv.118		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae	Myripristis		Myripristis	genus
+asv.119		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.120		Animalia	Chordata	Teleostei	Mugiliformes	Mugilidae	Crenimugil	Crenimugil crenilabis	Crenimugil crenilabis	species
+asv.121		Animalia							Metazoa	subkingdom
+asv.122		Animalia	Chordata	Teleostei	Centrarchiformes	Kyphosidae	Kyphosus	Kyphosus cinerascens	Kyphosus cinerascens	species
+asv.123		Animalia	Chordata	Teleostei	Centrarchiformes	Kyphosidae	Kyphosus		Kyphosus	genus
+asv.125		Animalia	Chordata						Chordata	phylum
+asv.126		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Scaridae	Hipposcarus	Hipposcarus longiceps	Hipposcarus longiceps	species
+asv.127		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Stethojulis	Stethojulis bandanensis	Stethojulis bandanensis	species
+asv.128		Animalia	Chordata						Actinopteri	superclass
+asv.129		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Scaridae	Scarus		Scarus	genus
+asv.130		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus	Lutjanus kasmira	Lutjanus kasmira	species
+asv.131		Animalia	Chordata	Teleostei	Centrarchiformes	Kyphosidae	Kyphosus	Kyphosus cinerascens	Kyphosus cinerascens	species
+asv.132		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Cymolutes	Cymolutes praetextatus	Cymolutes praetextatus	species
+asv.133		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.134		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.135		Animalia	Chordata						Chordata	phylum
+asv.136		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae	Sargocentron	Sargocentron spiniferum	Sargocentron spiniferum	species
+asv.137		Animalia	Chordata	Teleostei	Mulliformes	Mullidae	Mulloidichthys	Mulloidichthys vanicolensis	Mulloidichthys vanicolensis	species
+asv.138		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae			Lutjanidae	family
+asv.139		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.140		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.141		Animalia	Chordata	Teleostei	Beloniformes	Belonidae			Belonidae	family
+asv.142		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Halichoeres		Halichoeres	genus
+asv.143		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Gerreidae	Gerres		Gerres	genus
+asv.144		Animalia	Chordata						Actinopteri	superclass
+asv.145		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Naso	Naso lopezi	Naso lopezi	species
+asv.146		Animalia	Chordata						Chordata	phylum
+asv.147		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Gnathanodon	Gnathanodon speciosus	Gnathanodon speciosus	species
+asv.148		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Caranx	Caranx sexfasciatus	Caranx sexfasciatus	species
+asv.149		Animalia	Chordata						Chordata	phylum
+asv.150		Animalia	Chordata	Mammalia					Mammalia	class
+asv.151		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus	Lutjanus fulvus	Lutjanus fulvus	species
+asv.152		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.153		Animalia	Chordata	Teleostei	Gobiiformes	Eleotridae	Eleotris		Eleotris	genus
+asv.154		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Cymolutes	Cymolutes praetextatus	Cymolutes praetextatus	species
+asv.155		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Naso	Naso lopezi	Naso lopezi	species
+asv.156		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae			Labridae	family
+asv.157		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.158		Animalia	Chordata						Chordata	phylum
+asv.159		Animalia	Chordata	Mammalia					Mammalia	class
+asv.160		Animalia	Chordata						Chordata	phylum
+asv.161		Animalia	Chordata	Teleostei	Acanthuriformes	Ephippidae	Platax	Platax orbicularis	Platax orbicularis	species
+asv.162		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.163		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Abudefduf		Abudefduf	genus
+asv.164		Animalia	Chordata						Actinopteri	superclass
+asv.165		Animalia	Chordata						Actinopteri	superclass
+asv.166		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Gerreidae	Gerres	Gerres cinereus	Gerres cinereus	species
+asv.167		Animalia	Chordata						Actinopteri	superclass
+asv.168		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Trachinotus		Trachinotus	genus
+asv.169		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.170		Animalia	Chordata	Teleostei	Beloniformes	Belonidae	Tylosurus	Tylosurus crocodilus	Tylosurus crocodilus	species
+asv.171		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae			Labridae	family
+asv.172		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.173		Animalia	Chordata						Chordata	phylum
+asv.174		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae	Myripristis		Myripristis	genus
+asv.175		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.176		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.177		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Pseudobalistes	Pseudobalistes flavimarginatus	Pseudobalistes flavimarginatus	species
+asv.178		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus	Acanthurus lineatus	Acanthurus lineatus	species
+asv.179		Animalia	Chordata	Teleostei	Tetraodontiformes	Tetraodontidae	Arothron	Arothron nigropunctatus	Arothron nigropunctatus	species
+asv.180		Animalia	Chordata	Teleostei	Beloniformes	Hemiramphidae	Hemiramphus		Hemiramphus	genus
+asv.181		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Halichoeres		Halichoeres	genus
+asv.182		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Cymolutes	Cymolutes praetextatus	Cymolutes praetextatus	species
+asv.183		Animalia	Chordata	Teleostei	Mugiliformes	Mugilidae	Crenimugil	Crenimugil crenilabis	Crenimugil crenilabis	species
+asv.184		Animalia	Chordata	Teleostei	Mugiliformes	Mugilidae	Crenimugil	Crenimugil crenilabis	Crenimugil crenilabis	species
+asv.185		Animalia	Chordata	Teleostei	Centrarchiformes	Kyphosidae	Kyphosus		Kyphosus	genus
+asv.186		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae			Lutjanidae	family
+asv.187		Animalia	Chordata						Chordata	phylum
+asv.188		Animalia	Chordata	Teleostei	Mulliformes	Mullidae	Mulloidichthys	Mulloidichthys vanicolensis	Mulloidichthys vanicolensis	species
+asv.189		Animalia							Metazoa	subkingdom
+asv.190		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.191		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae	Sargocentron	Sargocentron spiniferum	Sargocentron spiniferum	species
+asv.192		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus	Lutjanus kasmira	Lutjanus kasmira	species
+asv.193		Animalia	Chordata	Teleostei	Mulliformes	Mullidae	Mulloidichthys	Mulloidichthys vanicolensis	Mulloidichthys vanicolensis	species
+asv.194		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.195		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Gnathanodon	Gnathanodon speciosus	Gnathanodon speciosus	species
+asv.196		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae	Myripristis		Myripristis	genus
+asv.197		Animalia	Chordata	Teleostei	Carangaria incertae sedis	Sphyraenidae	Sphyraena		Sphyraena	genus
+asv.198		Animalia	Chordata						Actinopteri	superclass
+asv.199		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Thalassoma	Thalassoma amblycephalum	Thalassoma amblycephalum	species
+asv.200		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Gerreidae	Gerres	Gerres cinereus	Gerres cinereus	species
+asv.201		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus	Acanthurus leucosternon	Acanthurus leucosternon	species
+asv.202		Animalia	Chordata	Teleostei	Anguilliformes	Muraenidae			Muraenidae	family
+asv.203		Animalia	Chordata	Mammalia	Primates	Hominidae			Hominidae	family
+asv.204		Animalia	Chordata	Elasmobranchii	Myliobatiformes	Aetobatidae	Aetobatus	Aetobatus flagellum	Aetobatus flagellum	species
+asv.205		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Caranx	Caranx sexfasciatus	Caranx sexfasciatus	species
+asv.206		Animalia	Chordata	Teleostei	Beloniformes	Belonidae	Tylosurus	Tylosurus crocodilus	Tylosurus crocodilus	species
+asv.207		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae			Lutjanidae	family
+asv.208		Animalia	Chordata						Chordata	phylum
+asv.209		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Caranx	Caranx sexfasciatus	Caranx sexfasciatus	species
+asv.210		Animalia	Chordata	Mammalia					Mammalia	class
+asv.211		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Chrysiptera		Chrysiptera	genus
+asv.212		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Gerreidae	Gerres		Gerres	genus
+asv.213		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Gnathanodon	Gnathanodon speciosus	Gnathanodon speciosus	species
+asv.214		Animalia	Chordata	Teleostei	Gobiiformes	Eleotridae	Eleotris		Eleotris	genus
+asv.215		Animalia	Chordata						Chordata	phylum
+asv.216		Animalia	Chordata	Teleostei	Kurtiformes	Apogonidae			Apogonidae	family
+asv.217		Animalia	Chordata	Teleostei	Carangaria incertae sedis	Polynemidae			Polynemidae	family
+asv.218		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Balistapus	Balistapus undulatus	Balistapus undulatus	species
+asv.219		Animalia	Chordata						Chordata	phylum
+asv.220		Animalia	Chordata	Teleostei	Gobiiformes	Eleotridae	Eleotris		Eleotris	genus
+asv.221		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.222		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Naso	Naso lopezi	Naso lopezi	species
+asv.223		Animalia	Chordata						Actinopteri	superclass
+asv.224		Animalia	Chordata						Actinopteri	superclass
+asv.225		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae			Labridae	family
+asv.226		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Trachinotus		Trachinotus	genus
+asv.227		Animalia							Metazoa	subkingdom
+asv.228		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Gerreidae	Gerres	Gerres cinereus	Gerres cinereus	species
+asv.229		Animalia	Chordata	Elasmobranchii	Myliobatiformes	Dasyatidae	Urogymnus	Urogymnus asperrimus	Urogymnus asperrimus	species
+asv.230		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.231		Animalia	Chordata						Actinopteri	superclass
+asv.232		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.233		Animalia	Chordata						Actinopteri	superclass
+asv.234		Animalia	Chordata						Actinopteri	superclass
+asv.235		Animalia	Chordata	Teleostei	Tetraodontiformes	Monacanthidae	Cantherhines	Cantherhines pullus	Cantherhines pullus	species
+asv.236		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Gerreidae	Gerres	Gerres cinereus	Gerres cinereus	species
+asv.237		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.239		Animalia	Chordata	Teleostei	Clupeiformes	Spratelloididae	Spratelloides	Spratelloides delicatulus	Spratelloides delicatulus	species
+asv.240		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae	Gnatholepis	Gnatholepis anjerensis	Gnatholepis anjerensis	species
+asv.241		Animalia	Chordata	Teleostei	Beloniformes	Hemiramphidae	Hemiramphus		Hemiramphus	genus
+asv.242		Animalia	Chordata						Actinopteri	superclass
+asv.243		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Chromis	Chromis vanderbilti	Chromis vanderbilti	species
+asv.244		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.245		Animalia	Chordata						Actinopteri	superclass
+asv.246		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus	Acanthurus lineatus	Acanthurus lineatus	species
+asv.247		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.248		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.249		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Pseudobalistes	Pseudobalistes flavimarginatus	Pseudobalistes flavimarginatus	species
+asv.250		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Sufflamen	Sufflamen chrysopterum	Sufflamen chrysopterum	species
+asv.251		Animalia	Chordata	Teleostei	Beloniformes	Belonidae	Tylosurus	Tylosurus crocodilus	Tylosurus crocodilus	species
+asv.252		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Thalassoma	Thalassoma amblycephalum	Thalassoma amblycephalum	species
+asv.253		Animalia	Chordata						Actinopteri	superclass
+asv.254		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Gerreidae	Gerres		Gerres	genus
+asv.255		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus	Lutjanus fulviflamma	Lutjanus fulviflamma	species
+asv.256		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.257		Animalia	Chordata	Mammalia	Primates	Hominidae			Hominidae	family
+asv.258		Animalia	Chordata						Actinopteri	superclass
+asv.259		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Scaridae	Scarus	Scarus rubroviolaceus	Scarus rubroviolaceus	species
+asv.260		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.261		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Halichoeres		Halichoeres	genus
+asv.262		Animalia	Chordata	Teleostei	Mulliformes	Mullidae	Parupeneus		Parupeneus	genus
+asv.263		Animalia	Chordata	Teleostei	Mulliformes	Mullidae	Mulloidichthys	Mulloidichthys vanicolensis	Mulloidichthys vanicolensis	species
+asv.264		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Gerreidae	Gerres	Gerres cinereus	Gerres cinereus	species
+asv.265		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus	Acanthurus leucosternon	Acanthurus leucosternon	species
+asv.266		Animalia	Chordata						Chordata	phylum
+asv.268		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae	Myripristis		Myripristis	genus
+asv.269		Animalia	Chordata						Chordata	phylum
+asv.270		Animalia	Chordata	Elasmobranchii	Myliobatiformes	Aetobatidae	Aetobatus	Aetobatus flagellum	Aetobatus flagellum	species
+asv.271		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae			Lutjanidae	family
+asv.272		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Chrysiptera		Chrysiptera	genus
+asv.273		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus	Lutjanus argentimaculatus	Lutjanus argentimaculatus	species
+asv.274		Animalia	Chordata						Actinopteri	superclass
+asv.275		Animalia	Chordata	Teleostei	Beloniformes	Belonidae	Tylosurus	Tylosurus crocodilus	Tylosurus crocodilus	species
+asv.276		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Gerreidae	Gerres		Gerres	genus
+asv.277		Animalia	Chordata	Teleostei	Tetraodontiformes	Tetraodontidae	Arothron	Arothron hispidus	Arothron hispidus	species
+asv.278		Animalia	Chordata	Mammalia					Mammalia	class
+asv.279		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Cymolutes	Cymolutes praetextatus	Cymolutes praetextatus	species
+asv.280		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.281		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus	Acanthurus leucosternon	Acanthurus leucosternon	species
+asv.282		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae			Holocentridae	family
+asv.283		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lethrinidae	Lethrinus		Lethrinus	genus
+asv.285		Animalia	Chordata	Teleostei	Centrarchiformes	Cirrhitidae	Cirrhitichthys	Cirrhitichthys aprinus	Cirrhitichthys aprinus	species
+asv.286		Animalia	Chordata	Teleostei	Gonorynchiformes	Chanidae	Chanos	Chanos chanos	Chanos chanos	species
+asv.287		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae	Asterropteryx	Asterropteryx semipunctata	Asterropteryx semipunctata	species
+asv.288		Animalia	Chordata						Chordata	phylum
+asv.289		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae	Myripristis		Myripristis	genus
+asv.290		Animalia	Chordata						Actinopteri	superclass
+asv.291		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Chrysiptera		Chrysiptera	genus
+asv.292		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.293		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Plectroglyphidodon	Plectroglyphidodon dickii	Plectroglyphidodon dickii	species
+asv.294		Animalia	Chordata						Chordata	phylum
+asv.295		Animalia	Chordata						Actinopteri	superclass
+asv.296		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Gerreidae	Gerres		Gerres	genus
+asv.297		Animalia	Chordata						Actinopteri	superclass
+asv.298		Animalia	Chordata						Actinopteri	superclass
+asv.299		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae	Myripristis		Myripristis	genus
+asv.300		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Naso	Naso lopezi	Naso lopezi	species
+asv.301		Animalia	Chordata	Elasmobranchii	Myliobatiformes	Dasyatidae	Urogymnus	Urogymnus asperrimus	Urogymnus asperrimus	species
+asv.302		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Naso	Naso lopezi	Naso lopezi	species
+asv.303		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.304		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae	Myripristis		Myripristis	genus
+asv.305		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae			Labridae	family
+asv.306		Animalia	Chordata	Teleostei	Clupeiformes	Spratelloididae	Spratelloides	Spratelloides delicatulus	Spratelloides delicatulus	species
+asv.308		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Gerreidae	Gerres		Gerres	genus
+asv.309		Animalia	Chordata	Teleostei	Anguilliformes	Muraenidae	Gymnothorax	Gymnothorax miliaris	Gymnothorax miliaris	species
+asv.310		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Gerreidae	Gerres		Gerres	genus
+asv.312		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae	Gnatholepis	Gnatholepis anjerensis	Gnatholepis anjerensis	species
+asv.313		Animalia	Chordata	Teleostei	Beloniformes	Belonidae	Tylosurus	Tylosurus crocodilus	Tylosurus crocodilus	species
+asv.314		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Haemulidae	Plectorhinchus		Plectorhinchus	genus
+asv.315		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Scaridae	Scarus	Scarus rubroviolaceus	Scarus rubroviolaceus	species
+asv.316		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Chromis	Chromis vanderbilti	Chromis vanderbilti	species
+asv.317		Animalia	Chordata						Chordata	phylum
+asv.318		Animalia	Chordata	Mammalia					Mammalia	class
+asv.319		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.320		Animalia	Chordata	Teleostei	Tetraodontiformes	Monacanthidae	Cantherhines	Cantherhines pullus	Cantherhines pullus	species
+asv.321		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Melichthys	Melichthys vidua	Melichthys vidua	species
+asv.322		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.323		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus	Lutjanus fulviflamma	Lutjanus fulviflamma	species
+asv.324		Animalia	Chordata						Actinopteri	superclass
+asv.325		Animalia	Chordata	Teleostei	Perciformes	Serranidae	Cephalopholis		Cephalopholis	genus
+asv.326		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Sufflamen	Sufflamen chrysopterum	Sufflamen chrysopterum	species
+asv.327		Animalia	Chordata	Teleostei	Mulliformes	Mullidae	Parupeneus		Parupeneus	genus
+asv.328		Animalia							Metazoa	subkingdom
+asv.329		Animalia	Chordata						Actinopteri	superclass
+asv.330		Animalia	Chordata						Actinopteri	superclass
+asv.331		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Gerreidae	Gerres		Gerres	genus
+asv.333		Animalia	Chordata						Actinopteri	superclass
+asv.334		Animalia	Chordata	Teleostei	Pleuronectiformes	Bothidae	Bothus	Bothus pantherinus	Bothus pantherinus	species
+asv.335		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.336		Animalia	Chordata	Elasmobranchii	Carcharhiniformes	Carcharhinidae			Carcharhinidae	family
+asv.337		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.338		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus	Lutjanus fulviflamma	Lutjanus fulviflamma	species
+asv.339		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Sufflamen	Sufflamen chrysopterum	Sufflamen chrysopterum	species
+asv.340		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Halichoeres		Halichoeres	genus
+asv.342		Animalia							Metazoa	subkingdom
+asv.344		Animalia	Chordata						Chordata	phylum
+asv.345		Animalia	Chordata						Actinopteri	superclass
+asv.346		Animalia	Chordata						Chordata	phylum
+asv.347		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Rhinecanthus		Rhinecanthus	genus
+asv.348		Animalia	Chordata						Actinopteri	superclass
+asv.349		Animalia	Chordata	Teleostei	Mulliformes	Mullidae	Parupeneus		Parupeneus	genus
+asv.350		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus	Lutjanus argentimaculatus	Lutjanus argentimaculatus	species
+asv.351		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Plectroglyphidodon	Plectroglyphidodon lacrymatus	Plectroglyphidodon lacrymatus	species
+asv.352		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.353		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Stethojulis		Stethojulis	genus
+asv.354		Animalia	Chordata	Mammalia					Mammalia	class
+asv.355		Animalia	Chordata						Actinopteri	superclass
+asv.356		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Monodactylidae	Monodactylus	Monodactylus argenteus	Monodactylus argenteus	species
+asv.357		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Cymolutes	Cymolutes praetextatus	Cymolutes praetextatus	species
+asv.358		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae	Myripristis		Myripristis	genus
+asv.359		Animalia	Chordata	Elasmobranchii	Carcharhiniformes	Carcharhinidae	Carcharhinus	Carcharhinus melanopterus	Carcharhinus melanopterus	species
+asv.360		Animalia	Chordata	Teleostei	Centrarchiformes	Cirrhitidae	Cirrhitichthys	Cirrhitichthys aprinus	Cirrhitichthys aprinus	species
+asv.361		Animalia	Chordata	Teleostei	Beloniformes	Belonidae	Tylosurus	Tylosurus crocodilus	Tylosurus crocodilus	species
+asv.362		Animalia	Chordata						Chordata	phylum
+asv.363		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae			Labridae	family
+asv.364		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae			Holocentridae	family
+asv.365		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae			Holocentridae	family
+asv.366		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.367		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Naso	Naso lopezi	Naso lopezi	species
+asv.368		Animalia	Chordata	Teleostei	Perciformes	Serranidae	Epinephelus		Epinephelus	genus
+asv.369		Animalia	Chordata						Chordata	phylum
+asv.370		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Anampses	Anampses caeruleopunctatus	Anampses caeruleopunctatus	species
+asv.371		Animalia	Chordata	Mammalia					Mammalia	class
+asv.372		Animalia	Chordata						Actinopteri	superclass
+asv.374		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae	Gnatholepis	Gnatholepis anjerensis	Gnatholepis anjerensis	species
+asv.375		Animalia	Chordata	Teleostei	Gonorynchiformes	Chanidae	Chanos	Chanos chanos	Chanos chanos	species
+asv.376		Animalia	Chordata						Actinopteri	superclass
+asv.377		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae			Labridae	family
+asv.378		Animalia	Chordata						Actinopteri	superclass
+asv.379		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae			Gobiidae	family
+asv.380		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Odonus	Odonus niger	Odonus niger	species
+asv.381		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae			Gobiidae	family
+asv.383		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lethrinidae	Lethrinus		Lethrinus	genus
+asv.384		Animalia	Chordata	Teleostei	Mulliformes	Mullidae	Parupeneus		Parupeneus	genus
+asv.385		Animalia	Chordata	Teleostei	Kurtiformes	Apogonidae			Apogonidae	family
+asv.386		Animalia	Chordata						Actinopteri	superclass
+asv.387		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lethrinidae	Monotaxis	Monotaxis grandoculis	Monotaxis grandoculis	species
+asv.389		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae	Myripristis		Myripristis	genus
+asv.390		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Scaridae	Calotomus		Calotomus	genus
+asv.391		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Plectroglyphidodon	Plectroglyphidodon dickii	Plectroglyphidodon dickii	species
+asv.392		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae			Holocentridae	family
+asv.393		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae	Asterropteryx	Asterropteryx semipunctata	Asterropteryx semipunctata	species
+asv.394		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae	Asterropteryx	Asterropteryx semipunctata	Asterropteryx semipunctata	species
+asv.395		Animalia	Chordata	Teleostei	Carangaria incertae sedis	Sphyraenidae	Sphyraena		Sphyraena	genus
+asv.396		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Plectroglyphidodon	Plectroglyphidodon dickii	Plectroglyphidodon dickii	species
+asv.397		Animalia	Chordata						Actinopteri	superclass
+asv.398		Animalia	Chordata						Chordata	phylum
+asv.399		Animalia	Chordata	Mammalia					Mammalia	class
+asv.400		Animalia	Chordata	Teleostei	Gobiiformes	Eleotridae	Eleotris		Eleotris	genus
+asv.402		Animalia	Chordata						Actinopteri	superclass
+asv.403		Animalia	Chordata	Teleostei	Kurtiformes	Apogonidae			Apogonidae	family
+asv.404		Animalia	Chordata						Chordata	phylum
+asv.405		Animalia	Chordata						Actinopteri	superclass
+asv.406		Animalia	Chordata	Teleostei	Anguilliformes	Muraenidae	Gymnothorax	Gymnothorax miliaris	Gymnothorax miliaris	species
+asv.407		Animalia	Chordata						Actinopteri	superclass
+asv.408		Animalia	Chordata						Actinopteri	superclass
+asv.409		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.410		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Cheilinus	Cheilinus undulatus	Cheilinus undulatus	species
+asv.411		Animalia							Metazoa	subkingdom
+asv.412		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Stegastes		Stegastes	genus
+asv.413		Animalia	Chordata	Teleostei	Pleuronectiformes	Bothidae	Bothus	Bothus pantherinus	Bothus pantherinus	species
+asv.414		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.415		Animalia	Chordata						Actinopteri	superclass
+asv.416		Animalia	Chordata						Actinopteri	superclass
+asv.417		Chromista	Bacillariophyta	Bacillariophyceae	Naviculales	Naviculaceae	Navicula	Navicula minima	Navicula minima	species
+asv.418		Animalia							Metazoa	subkingdom
+asv.419		Animalia	Chordata	Elasmobranchii	Carcharhiniformes	Carcharhinidae			Carcharhinidae	family
+asv.420		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.421		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.422		Animalia	Chordata						Chordata	phylum
+asv.423		Animalia	Chordata						Actinopteri	superclass
+asv.425		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Plectroglyphidodon	Plectroglyphidodon lacrymatus	Plectroglyphidodon lacrymatus	species
+asv.426		Animalia	Chordata	Teleostei	Perciformes	Serranidae	Cephalopholis		Cephalopholis	genus
+asv.427		Animalia	Chordata						Actinopteri	superclass
+asv.428		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.429		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Plectroglyphidodon	Plectroglyphidodon lacrymatus	Plectroglyphidodon lacrymatus	species
+asv.430		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Rhinecanthus		Rhinecanthus	genus
+asv.431		Animalia	Chordata						Chordata	phylum
+asv.432		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Pseudobalistes	Pseudobalistes flavimarginatus	Pseudobalistes flavimarginatus	species
+asv.433		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Stethojulis		Stethojulis	genus
+asv.434		Animalia	Chordata						Chordata	phylum
+asv.435		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Cymolutes	Cymolutes praetextatus	Cymolutes praetextatus	species
+asv.437		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Rhinecanthus		Rhinecanthus	genus
+asv.438		Chromista	Bacillariophyta	Bacillariophyceae	Naviculales	Naviculaceae	Navicula	Navicula minima	Navicula minima	species
+asv.439		Animalia	Chordata	Teleostei	Pleuronectiformes	Bothidae	Bothus	Bothus pantherinus	Bothus pantherinus	species
+asv.440		Chromista	Bacillariophyta	Bacillariophyceae	Naviculales	Naviculaceae	Navicula	Navicula minima	Navicula minima	species
+asv.441	Eukaryota								Incertae sedis	kingdom
+asv.442		Animalia	Chordata	Teleostei	Acanthuriformes	Chaetodontidae	Chaetodon	Chaetodon kleinii	Chaetodon kleinii	species
+asv.443		Animalia	Chordata	Teleostei	Mugiliformes	Mugilidae			Mugilidae	family
+asv.444		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae	Gnatholepis	Gnatholepis anjerensis	Gnatholepis anjerensis	species
+asv.445		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Cymolutes	Cymolutes praetextatus	Cymolutes praetextatus	species
+asv.446		Animalia	Chordata	Teleostei	Mulliformes	Mullidae	Parupeneus		Parupeneus	genus
+asv.447		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Naso	Naso lopezi	Naso lopezi	species
+asv.448		Animalia	Chordata						Actinopteri	superclass
+asv.450		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae			Gobiidae	family
+asv.451		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Rhinecanthus	Rhinecanthus aculeatus	Rhinecanthus aculeatus	species
+asv.452		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae			Gobiidae	family
+asv.453		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Odonus	Odonus niger	Odonus niger	species
+asv.454		Animalia	Chordata						Actinopteri	superclass
+asv.455		Animalia	Chordata		Testudines				Testudines	order
+asv.456		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae			Gobiidae	family
+asv.457		Animalia	Chordata	Mammalia					Mammalia	class
+asv.458		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.459		Animalia	Chordata	Teleostei	Carangaria incertae sedis	Sphyraenidae	Sphyraena		Sphyraena	genus
+asv.460		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Caesionidae	Pterocaesio	Pterocaesio tile	Pterocaesio tile	species
+asv.461		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Cheilinus	Cheilinus undulatus	Cheilinus undulatus	species
+asv.462		Animalia	Chordata						Actinopteri	superclass
+asv.464		Animalia	Chordata						Actinopteri	superclass
+asv.465		Animalia	Chordata						Chordata	phylum
+asv.466		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Scaridae	Calotomus		Calotomus	genus
+asv.467		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.468		Animalia	Chordata						Actinopteri	superclass
+asv.469		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.470		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae	Gnatholepis	Gnatholepis anjerensis	Gnatholepis anjerensis	species
+asv.471		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae	Myripristis		Myripristis	genus
+asv.472		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.473		Animalia	Chordata						Actinopteri	superclass
+asv.474		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Carangoides	Carangoides ferdau	Carangoides ferdau	species
+asv.475		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Caranx	Caranx sexfasciatus	Caranx sexfasciatus	species
+asv.476		Chromista	Bacillariophyta	Bacillariophyceae	Naviculales	Naviculaceae	Navicula	Navicula minima	Navicula minima	species
+asv.478		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Stegastes	Stegastes fasciolatus	Stegastes fasciolatus	species
+asv.479		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lethrinidae	Lethrinus	Lethrinus obsoletus	Lethrinus obsoletus	species
+asv.480		Animalia	Chordata	Teleostei	Clupeiformes	Spratelloididae	Spratelloides	Spratelloides delicatulus	Spratelloides delicatulus	species
+asv.481		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.482		Animalia	Chordata	Teleostei	Anguilliformes	Muraenidae	Gymnothorax		Gymnothorax	genus
+asv.483		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.484		Animalia	Chordata						Actinopteri	superclass
+asv.485		Animalia	Chordata	Teleostei	Anguilliformes	Congridae	Conger	Conger cinereus	Conger cinereus	species
+asv.486		Animalia	Chordata	Teleostei	Gobiiformes	Eleotridae	Eleotris		Eleotris	genus
+asv.487		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.488		Animalia	Chordata	Teleostei	Kurtiformes	Apogonidae			Apogonidae	family
+asv.489		Animalia							Metazoa	subkingdom
+asv.490		Animalia	Chordata	Teleostei	Kurtiformes	Apogonidae			Apogonidae	family
+asv.491		Animalia							Metazoa	subkingdom
+asv.492		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Chrysiptera	Chrysiptera brownriggii	Chrysiptera brownriggii	species
+asv.493		Animalia	Chordata						Actinopteri	superclass
+asv.494		Animalia	Chordata						Chordata	phylum
+asv.495		Animalia	Chordata	Teleostei	Perciformes	Serranidae	Cephalopholis		Cephalopholis	genus
+asv.496		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Naso	Naso lopezi	Naso lopezi	species
+asv.497		Animalia	Chordata	Teleostei	Mulliformes	Mullidae	Parupeneus	Parupeneus multifasciatus	Parupeneus multifasciatus	species
+asv.498		Animalia							Metazoa	subkingdom
+asv.499		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.500		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Abudefduf	Abudefduf vaigiensis	Abudefduf vaigiensis	species
+asv.501		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Scomberoides	Scomberoides lysan	Scomberoides lysan	species
+asv.502	Eukaryota								Incertae sedis	kingdom
+asv.503		Animalia							Metazoa	subkingdom
+asv.504	Eukaryota								Incertae sedis	kingdom
+asv.505		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Oxycheilinus	Oxycheilinus bimaculatus	Oxycheilinus bimaculatus	species
+asv.507		Animalia	Chordata	Teleostei	Kurtiformes	Apogonidae	Ostorhinchus	Ostorhinchus cookii	Ostorhinchus cookii	species
+asv.508		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.509		Animalia	Chordata	Teleostei	Acanthuriformes	Chaetodontidae	Forcipiger	Forcipiger flavissimus	Forcipiger flavissimus	species
+asv.510		Animalia	Chordata	Teleostei	Aulopiformes	Synodontidae	Synodus	Synodus variegatus	Synodus variegatus	species
+asv.511		Animalia	Chordata						Chordata	phylum
+asv.512		Animalia	Chordata	Teleostei	Atheriniformes	Atherinidae	Hypoatherina	Hypoatherina tsurugae	Hypoatherina tsurugae	species
+asv.513		Animalia	Chordata						Chordata	phylum
+asv.514		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Haemulidae	Plectorhinchus	Plectorhinchus vittatus	Plectorhinchus vittatus	species
+asv.515		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Plectroglyphidodon	Plectroglyphidodon leucozonus	Plectroglyphidodon leucozonus	species
+asv.516		Animalia	Chordata						Actinopteri	superclass
+asv.517		Animalia							Metazoa	subkingdom
+asv.518		Animalia	Chordata	Teleostei	Scombriformes	Scombridae	Thunnus		Thunnus	genus
+asv.519		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae			Labridae	family
+asv.520		Animalia	Chordata						Chordata	phylum
+asv.522		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Novaculoides	Novaculoides macrolepidotus	Novaculoides macrolepidotus	species
+asv.523		Animalia	Chordata	Teleostei	Aulopiformes	Synodontidae	Synodus	Synodus variegatus	Synodus variegatus	species
+asv.524		Animalia	Chordata						Actinopteri	superclass
+asv.525		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae			Holocentridae	family
+asv.526		Animalia							Metazoa	subkingdom
+asv.527		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae	Myripristis		Myripristis	genus
+asv.528		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Scomberoides	Scomberoides lysan	Scomberoides lysan	species
+asv.529		Animalia	Chordata						Actinopteri	superclass
+asv.530		Animalia	Chordata	Teleostei	Anguilliformes	Muraenidae	Gymnothorax		Gymnothorax	genus
+asv.531		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae	Gnatholepis	Gnatholepis anjerensis	Gnatholepis anjerensis	species
+asv.532		Animalia	Chordata						Actinopteri	superclass
+asv.534		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.535		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus	Acanthurus leucosternon	Acanthurus leucosternon	species
+asv.536		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Stethojulis	Stethojulis bandanensis	Stethojulis bandanensis	species
+asv.537		Animalia	Chordata						Actinopteri	superclass
+asv.538		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.539		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Novaculichthys	Novaculichthys taeniourus	Novaculichthys taeniourus	species
+asv.540		Animalia	Chordata	Teleostei	Kurtiformes	Apogonidae			Apogonidae	family
+asv.541		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae	Gnatholepis	Gnatholepis anjerensis	Gnatholepis anjerensis	species
+asv.542		Animalia	Chordata						Chordata	phylum
+asv.543		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Pseudobalistes	Pseudobalistes flavimarginatus	Pseudobalistes flavimarginatus	species
+asv.544		Animalia	Chordata	Teleostei	Gobiiformes	Gobiidae	Gnatholepis	Gnatholepis anjerensis	Gnatholepis anjerensis	species
+asv.545		Animalia	Chordata						Chordata	phylum
+asv.546		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.547		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Haemulidae			Haemulidae	family
+asv.548		Animalia	Chordata		Testudines				Testudines	order
+asv.549		Animalia	Chordata						Chordata	phylum
+asv.550		Animalia	Chordata	Elasmobranchii	Carcharhiniformes	Carcharhinidae	Carcharhinus		Carcharhinus	genus
+asv.551		Animalia	Chordata						Chordata	phylum
+asv.552		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Carangoides	Carangoides ferdau	Carangoides ferdau	species
+asv.553		Animalia	Chordata	Teleostei	Anguilliformes	Congridae	Conger	Conger cinereus	Conger cinereus	species
+asv.554		Animalia	Chordata	Teleostei	Anguilliformes	Muraenidae			Muraenidae	family
+asv.555		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Trachinotus		Trachinotus	genus
+asv.556		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.557		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Rhinecanthus		Rhinecanthus	genus
+asv.558		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.559		Animalia	Chordata	Teleostei	Acanthuriformes	Chaetodontidae	Chaetodon		Chaetodon	genus
+asv.560		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Pseudobalistes	Pseudobalistes flavimarginatus	Pseudobalistes flavimarginatus	species
+asv.561		Animalia	Chordata	Teleostei	Carangaria incertae sedis	Sphyraenidae	Sphyraena		Sphyraena	genus
+asv.562		Chromista	Bacillariophyta	Bacillariophyceae	Naviculales	Naviculaceae	Navicula	Navicula minima	Navicula minima	species
+asv.563		Animalia							Metazoa	subkingdom
+asv.565		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae			Holocentridae	family
+asv.566		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Caesionidae	Pterocaesio	Pterocaesio tile	Pterocaesio tile	species
+asv.567		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Carangoides	Carangoides ferdau	Carangoides ferdau	species
+asv.568		Animalia	Chordata						Actinopteri	superclass
+asv.569		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Rhinecanthus	Rhinecanthus aculeatus	Rhinecanthus aculeatus	species
+asv.570		Animalia	Chordata	Teleostei	Anguilliformes	Muraenidae	Gymnothorax	Gymnothorax kidako	Gymnothorax kidako	species
+asv.572		Animalia	Chordata	Teleostei	Acanthuriformes	Zanclidae	Zanclus	Zanclus cornutus	Zanclus cornutus	species
+asv.573		Animalia	Chordata	Teleostei	Blenniiformes	Blenniidae	Salarias	Salarias fasciatus	Salarias fasciatus	species
+asv.574		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae			Holocentridae	family
+asv.575		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Scomberoides	Scomberoides lysan	Scomberoides lysan	species
+asv.576		Animalia							Metazoa	subkingdom
+asv.577		Animalia	Chordata	Teleostei	Anguilliformes	Muraenidae	Gymnothorax		Gymnothorax	genus
+asv.579		Animalia	Chordata	Mammalia	Primates	Hominidae			Hominidae	family
+asv.580		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.581		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Oxycheilinus	Oxycheilinus bimaculatus	Oxycheilinus bimaculatus	species
+asv.582		Animalia	Chordata	Teleostei	Anguilliformes	Muraenidae	Gymnothorax	Gymnothorax flavimarginatus	Gymnothorax flavimarginatus	species
+asv.583		Animalia	Chordata	Teleostei	Anguilliformes	Muraenidae	Gymnothorax		Gymnothorax	genus
+asv.584		Animalia							Metazoa	subkingdom
+asv.585		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.587		Animalia	Chordata	Teleostei	Mulliformes	Mullidae	Mulloidichthys	Mulloidichthys vanicolensis	Mulloidichthys vanicolensis	species
+asv.588		Animalia	Chordata	Teleostei	Anguilliformes	Ophichthidae			Ophichthidae	family
+asv.589		Animalia	Chordata	Teleostei	Aulopiformes	Synodontidae	Synodus	Synodus variegatus	Synodus variegatus	species
+asv.590		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.591		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae			Labridae	family
+asv.592		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Chrysiptera	Chrysiptera brownriggii	Chrysiptera brownriggii	species
+asv.593		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.594		Animalia	Chordata						Actinopteri	superclass
+asv.596		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.597		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.598		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae			Labridae	family
+asv.599		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Chrysiptera	Chrysiptera brownriggii	Chrysiptera brownriggii	species
+asv.600		Animalia	Chordata						Actinopteri	superclass
+asv.601		Animalia	Chordata	Teleostei	Kurtiformes	Apogonidae	Ostorhinchus	Ostorhinchus cookii	Ostorhinchus cookii	species
+asv.602		Animalia	Chordata	Teleostei	Anguilliformes	Ophichthidae			Ophichthidae	family
+asv.603		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus	Lutjanus rivulatus	Lutjanus rivulatus	species
+asv.604		Animalia	Chordata						Actinopteri	superclass
+asv.605		Animalia							Metazoa	subkingdom
+asv.606		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lethrinidae	Lethrinus		Lethrinus	genus
+asv.607		Animalia	Chordata						Chordata	phylum
+asv.608		Animalia	Chordata	Teleostei	Scombriformes	Scombridae	Thunnus		Thunnus	genus
+asv.609		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Abudefduf	Abudefduf vaigiensis	Abudefduf vaigiensis	species
+asv.610		Animalia	Chordata	Mammalia					Mammalia	class
+asv.611		Animalia	Chordata						Actinopteri	superclass
+asv.612		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Plectroglyphidodon	Plectroglyphidodon leucozonus	Plectroglyphidodon leucozonus	species
+asv.613		Animalia	Chordata	Teleostei	Aulopiformes	Synodontidae	Synodus	Synodus variegatus	Synodus variegatus	species
+asv.614		Chromista	Bacillariophyta	Bacillariophyceae	Naviculales	Naviculaceae	Navicula	Navicula minima	Navicula minima	species
+asv.615		Chromista	Bacillariophyta	Bacillariophyceae	Naviculales	Naviculaceae	Navicula	Navicula minima	Navicula minima	species
+asv.616		Animalia	Chordata	Teleostei	Gobiiformes	Kraemeriidae	Kraemeria	Kraemeria cunicularia	Kraemeria cunicularia	species
+asv.617		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.618		Animalia	Chordata	Teleostei	Anguilliformes	Muraenidae	Gymnothorax		Gymnothorax	genus
+asv.619		Animalia	Chordata	Teleostei	Ovalentaria incertae sedis	Pomacentridae	Abudefduf	Abudefduf vaigiensis	Abudefduf vaigiensis	species
+asv.620		Animalia	Chordata	Teleostei	Acanthuriformes	Chaetodontidae	Hemitaurichthys		Hemitaurichthys	genus
+asv.621		Animalia	Chordata						Actinopteri	superclass
+asv.622		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus		Acanthurus	genus
+asv.623		Animalia	Chordata	Elasmobranchii	Myliobatiformes	Dasyatidae			Dasyatidae	family
+asv.624		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.625		Animalia	Chordata						Chordata	phylum
+asv.626		Animalia	Chordata	Teleostei	Albuliformes	Albulidae	Albula	Albula glossodonta	Albula glossodonta	species
+asv.627		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Rhinecanthus	Rhinecanthus aculeatus	Rhinecanthus aculeatus	species
+asv.628		Animalia	Chordata	Teleostei	Anguilliformes	Ophichthidae			Ophichthidae	family
+asv.629		Chromista	Bacillariophyta	Bacillariophyceae	Naviculales	Naviculaceae	Navicula	Navicula minima	Navicula minima	species
+asv.630		Animalia	Chordata						Actinopteri	superclass
+asv.631		Animalia	Chordata	Teleostei	Perciformes	Serranidae	Epinephelus		Epinephelus	genus
+asv.632		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Thalassoma		Thalassoma	genus
+asv.633		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Acanthurus	Acanthurus leucosternon	Acanthurus leucosternon	species
+asv.635		Animalia	Chordata						Actinopteri	superclass
+asv.636		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Labridae	Cheilinus	Cheilinus trilobatus	Cheilinus trilobatus	species
+asv.637		Animalia	Chordata	Teleostei	Scombriformes	Scombridae	Thunnus		Thunnus	genus
+asv.638		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus	Lutjanus kasmira	Lutjanus kasmira	species
+asv.639		Animalia	Chordata	Teleostei	Tetraodontiformes	Balistidae	Rhinecanthus		Rhinecanthus	genus
+asv.641		Animalia	Chordata	Teleostei	Gobiiformes	Eleotridae	Eleotris		Eleotris	genus
+asv.642		Animalia	Chordata						Actinopteri	superclass
+asv.643		Animalia	Chordata	Teleostei	Aulopiformes	Synodontidae	Synodus	Synodus variegatus	Synodus variegatus	species
+asv.644		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae			Holocentridae	family
+asv.645		Animalia							Metazoa	subkingdom
+asv.646		Animalia							Metazoa	subkingdom
+asv.647		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae	Ostichthys	Ostichthys japonicus	Ostichthys japonicus	species
+asv.648		Animalia	Chordata	Teleostei	Anguilliformes	Muraenidae	Gymnothorax	Gymnothorax kidako	Gymnothorax kidako	species
+asv.649		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus	Lutjanus fulviflamma	Lutjanus fulviflamma	species
+asv.650		Animalia							Metazoa	subkingdom
+asv.651		Animalia	Chordata	Teleostei	Eupercaria incertae sedis	Lutjanidae	Lutjanus		Lutjanus	genus
+asv.652		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.653		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Scomberoides	Scomberoides lysan	Scomberoides lysan	species
+asv.654		Animalia	Chordata	Teleostei	Acropomatiformes	Pempheridae	Pempheris	Pempheris schwenkii	Pempheris schwenkii	species
+asv.655		Animalia							Metazoa	subkingdom
+asv.656		Chromista	Bacillariophyta	Bacillariophyceae	Naviculales	Naviculaceae	Navicula	Navicula minima	Navicula minima	species
+asv.657		Animalia							Metazoa	subkingdom
+asv.658		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.659		Animalia	Chordata						Actinopteri	superclass
+asv.660		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae			Holocentridae	family
+asv.661		Animalia	Chordata						Actinopteri	superclass
+asv.662		Animalia	Chordata	Teleostei	Acanthuriformes	Acanthuridae	Naso	Naso lopezi	Naso lopezi	species
+asv.663		Animalia	Chordata	Aves	Columbiformes	Columbidae			Columbidae	family
+asv.664		Animalia							Metazoa	subkingdom
+asv.665		Animalia	Chordata	Teleostei	Beloniformes	Belonidae	Tylosurus	Tylosurus crocodilus	Tylosurus crocodilus	species
+asv.666		Animalia	Chordata	Teleostei	Anguilliformes	Muraenidae	Gymnothorax	Gymnothorax undulatus	Gymnothorax undulatus	species
+asv.667		Animalia	Chordata	Teleostei	Atheriniformes	Atherinidae	Hypoatherina	Hypoatherina tsurugae	Hypoatherina tsurugae	species
+asv.668		Animalia	Chordata	Teleostei	Perciformes	Serranidae	Epinephelus		Epinephelus	genus
+asv.669		Animalia	Chordata	Teleostei	Acanthuriformes	Chaetodontidae	Chaetodon		Chaetodon	genus
+asv.670		Animalia	Chordata	Teleostei	Anguilliformes	Muraenidae	Gymnothorax	Gymnothorax undulatus	Gymnothorax undulatus	species
+asv.671		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.672		Animalia	Chordata	Mammalia	Primates	Hominidae	Homo	Homo sapiens	Homo sapiens	species
+asv.673		Animalia	Chordata	Teleostei	Holocentriformes	Holocentridae			Holocentridae	family
+asv.674		Animalia							Metazoa	subkingdom
+asv.675		Animalia							Metazoa	subkingdom
+asv.676		Animalia	Chordata	Teleostei	Carangiformes	Carangidae	Caranx	Caranx sexfasciatus	Caranx sexfasciatus	species
+asv.677		Animalia	Chordata	Aves	Columbiformes	Columbidae			Columbidae	family
+asv.678		Animalia	Chordata	Elasmobranchii	Carcharhiniformes	Carcharhinidae	Carcharhinus		Carcharhinus	genus
