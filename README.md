@@ -49,7 +49,7 @@ Rscript)
 
 	subgraph "Retrieve reference sequences"
 		direction LR
-        	step1:::blue -.->|<font color=black>Download| step2:::blue -.->|<font color=black>Trim| step3:::blue -.->|<font color=black>Remove duplicates| step4:::blue -.->|<font color=black>Rename| step5:::blue
+        	step1:::blue -.->|Download| step2:::blue -.->|Trim| step3:::blue -.->|Remove duplicates| step4:::blue -.->|Rename| step5:::blue
 	end
 	subgraph "Align fasta file"
 		direction LR
