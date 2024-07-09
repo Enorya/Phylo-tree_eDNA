@@ -20,22 +20,22 @@ With this method, the ASVs are colored depending if they are ASVs or coming from
 ```mermaid
 flowchart LR
 	amplicon>Amplicon name]
-	family>Family name]
-	Assign>Assignment table]
-	Seq>Sequence table]
-	Out>Outgroup fasta file]
+	family><font color=black>Family name]
+	Assign><font color=black>Assignment table]
+	Seq><font color=black>Sequence table]
+	Out><font color=black>Outgroup fasta file]
 	step1(<font color=black>NCBI accession list
 TaxonKit)
-	step2(NCBI fasta file
+	step2(<font color=black>NCBI fasta file
 ncbi-acc-download)
-	step3(NCBI fasta file
+	step3(<font color=black>NCBI fasta file
 Cutadapt)
-	step4(NCBI fasta file
+	step4(<font color=black>NCBI fasta file
 Seqkit)
-	step5(NCBI final fasta file)
-	step6(ASVs fasta file)
-	step7(Final fasta file)
-	step8(Final fasta file
+	step5(<font color=black>NCBI final fasta file)
+	step6(<font color=black>ASVs fasta file)
+	step7(<font color=black>Final fasta file)
+	step8(<font color=black>Final fasta file
 Seqkit)
 	step9(Aligned fasta file
 MAFFT)
