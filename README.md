@@ -19,7 +19,7 @@ With this method, the ASVs are colored depending if they are ASVs or coming from
 
 ```mermaid
 flowchart LR
-	amplicon>Amplicon name]
+	amplicon><font color=black>Amplicon name]
 	family><font color=black>Family name]
 	Assign><font color=black>Assignment table]
 	Seq><font color=black>Sequence table]
@@ -37,14 +37,14 @@ Seqkit)
 	step7(<font color=black>Final fasta file)
 	step8(<font color=black>Final fasta file
 Seqkit)
-	step9(Aligned fasta file
+	step9(<font color=black>Aligned fasta file
 MAFFT)
-	step10(Curated alignment file
+	step10(<font color=black>Curated alignment file
 Gblocks)
-	step11(Newick tree file
+	step11(<font color=black>Newick tree file
 FastTreeMP)
-	step12(Info file)
-	step13(Tree in PDF
+	step12(<font color=black>Info file)
+	step13(<font color=black>Tree in PDF
 Rscript)
 
 	subgraph "Retrieve reference sequences"
