@@ -107,7 +107,7 @@ site3
 ```
 
 ### Taxonomy tables
-Your file should look like the `tax_table.tsv` available in the test/ directory
+Your file should look like one of the `*_tax_table.tsv` available in the `test/` directory
 | ASV_name | superkingdom | kingdom | phylum | class | order | family | genus | species | scientificName | taxonRank |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | asv.1 | | Animalia | Chordata | Teleostei | Clupeiformes | Spratelloididae | Jenkinsia | Jenkinsia lamprotaenia | Jenkinsia lamprotaenia | species |
@@ -115,7 +115,7 @@ Your file should look like the `tax_table.tsv` available in the test/ directory
 | asv.3 | | Animalia | Chordata | Elasmobranchii | Myliobatiformes | | | | Myliobatiformes | order |
 
 ### Sequence tables
-Your file should look like the `seq_table.tsv` available in the test/ directory
+Your file should look like one of the `*_seq_table.tsv` available in the `test/` directory
 | target_gene | pcr_primer_forward | pcr_primer_reverse | DNA_sequence | occurrenceID |
 | :---: | :---: | :---: | :---: | :---: |
 | 12S | GTCGGTAAAACTCGTGCCAGC | CATAGTGGGGTATCTAATCCCAGTTTG | GTTGGTAAATCTCGTGCCAGCCACCGCGGTCACACGATTAACCCAAGTCAATAGAAGCCGGCGTAAAGAGTGTTTTAGATCACCCCCTCCCCAATAAAGCTAAAACTCACCTGAGTTGTAAAAAACTCCAGTTGACACAAAATAGACTACGAAAGTGGCTTTAACATATCTGAACACACAATAGCTAAGACC | asv.1_S003 |
