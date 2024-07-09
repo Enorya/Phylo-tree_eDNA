@@ -114,12 +114,6 @@ Your file should look like the `tax_table.tsv` available in the test/ directory
 | asv.2 | Eukaryota | | | | | | | | Incertae sedis | kingdom |
 | asv.3 | | Animalia | Chordata | Elasmobranchii | Myliobatiformes | | | | Myliobatiformes | order |
 
-> [!IMPORTANT]
-> The name of your taxonomy tables should contain the site (=location) name.
->
-> (See examples in the `test/` folder)
-
-
 ### Sequence tables
 Your file should look like the `seq_table.tsv` available in the test/ directory
 | target_gene | pcr_primer_forward | pcr_primer_reverse | DNA_sequence | occurrenceID |
@@ -129,6 +123,11 @@ Your file should look like the `seq_table.tsv` available in the test/ directory
 | 12S | GTCGGTAAAACTCGTGCCAGC | CATAGTGGGGTATCTAATCCCAGTTTG | GGGTTGGTAAATTTCGTGCCAGCCACCGCGGTCACACGATTAACCCAAGTCAATAGAAGCCGGCGTAAAGAGTGTTTTAGATCACCCCCTCCCCAATAAAGCTAAAACTCACCTGAGTTGTAAAAAACTCCAGTTGACACAAAATAGACTACGAAAGTGGCTTTAACATATCTGAACACACAATAGCTAAGACC | asv.3_S017 |
 > [!NOTE]
 > Columns with PCR primer sequences are not mandatory in this table.
+
+> [!IMPORTANT]
+> The name of your taxonomy adn sequence tables should contain the site (=location) name and these names should match the ones in your `all_sites.txt` file
+>
+> (See examples in the `test/` folder)
 
 ### Outgroup fasta file (if different than the one provided
 1. Download your sequence using the accession number of the mitochondrial genome you want to use:
