@@ -70,10 +70,17 @@ Rscript)
 ## Installation
 To be able to use the 2 scripts you need to create 2 new conda environments you need to first clone this repository and then use:
 ```
+# Clone repository
 git clone https://github.com/Enorya/Phylo-tree_eDNA.git
 cd Phylo-tree_eDNA/
+
+# Install conda environments
 conda env create -f tree_creation.yml
 conda env create -f R_tree_creation.yml
+
+# Make scripts executable
+chmod +x *_tree_creation.sh
+chmod +x *.r
 ```
 In order to use the TaxonKit dependency you need to download taxonomy information from the NCBI database:
 ```
