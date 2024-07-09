@@ -480,7 +480,7 @@ rm Rplots.pdf
 ENDFILE=${family}_${amplicon}.pdf
 if [ -f "$ENDFILE" ]
 then
-	echo -e "\nTree creation script worked, $ENDFILE is available in ${family}/ folder!"
+	echo -e "\nTree creation script worked, $ENDFILE is available in ${family}_${amplicon}/ folder!\n"
 else
 	echo -e "\nA problem occurred! $ENDFILE was not created. Please look at the log file to understand what happend."
 fi
