@@ -97,6 +97,15 @@ grep "^>" nt.fsa > all_nt_db_acc.txt
 
 ## Preparation of the files
 
+### Site file
+You need to prepare a file containing the names of all your locations (one by line):
+```
+site1
+site2
+site3
+...
+```
+
 ### Taxonomy tables
 Your file should look like the `tax_table.tsv` available in the test/ directory
 | ASV_name | superkingdom | kingdom | phylum | class | order | family | genus | species | scientificName | taxonRank |
