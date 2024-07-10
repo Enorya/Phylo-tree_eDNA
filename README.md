@@ -5,6 +5,12 @@ Scripts to create phylogenetic trees based on taxonomic assignments of Environme
 <img src="https://github.com/Enorya/Phylo-tree_eDNA/blob/main/logo_phyloTree.png" width="300">
 </p>
 
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+...snip...    
+<a name="headers"/>
+
 ## Description
 This repository contains 2 different scripts to plot phylogenetic trees based on taxonomic assignments of Environmental DNA (eDNA) data.
 
