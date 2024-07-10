@@ -221,7 +221,3 @@ family_tree_creation.sh -n Dasyatidae -t 'test/${site}_${amplicon}_tax_table.tsv
 ## Usage of Location tree script
 > [!CAUTION]
 > This script is not finalised for the moment, please take this into consideration if you wish to use it.
-
-# To do
-
-- Idea for a logo: water drop with some DNA strand in it and coming out from it and transforming to a phylogenetic tree
