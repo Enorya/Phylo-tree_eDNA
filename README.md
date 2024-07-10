@@ -9,7 +9,7 @@ Scripts to create phylogenetic trees based on taxonomic assignments of Environme
 - [Installation](#installation)  
 - [Preparation of the files](#preparation-of-the-files)   
 - [Usage of Family tree script](#usage-of-family-tree-script)
-
+- [Usage of Location tree script](#usage-of-location-tree-script)
 
 ## Description
 This repository contains 2 different scripts to plot phylogenetic trees based on taxonomic assignments of Environmental DNA (eDNA) data.
