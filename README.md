@@ -6,8 +6,10 @@ Scripts to create phylogenetic trees based on taxonomic assignments of Environme
 </p>
 
 ##### Table of Contents  
-[Description](#Description)  
-[Installation](#Installation)    
+[1. Description](#Description)  
+[2. Installation](#Installation)
+[3. Preparation](#Preparation of the files)
+
 <a name="headers"/>
 
 ## Description
