@@ -66,16 +66,6 @@ done
 source ~/.bashrc
 conda activate tree-creation
 
-# family=$1
-# tax_table=$2 # '../../results_pacman_pip/eDNAexpeditions_batch1_samples/runs/${site}_${amplicon}/05-dwca/Full_tax_table_with_lsids.tsv'
-# seq_table=$3 # '../../results_pacman_pip/eDNAexpeditions_batch1_samples/runs/${site}_${amplicon}/05-dwca/DNA_extension_table.tsv'
-# amplicon=$4 # 12SMifish
-# primer_forward=$5 # GTCGGTAAAACTCGTGCCAGC
-# primer_reverse=$6 # CAAACTGGGATTAGATACCCCACTATG
-# gene_name=$7 # 12S
-# length_amp=$8 # 280
-# outgroup=$9 # petromyzon_marinus_12SMifish.fa
-
 echo -e "Checking the parameters given by the user to be sure that all needed informations are provided.\n"
 
 # Checking if family name available
