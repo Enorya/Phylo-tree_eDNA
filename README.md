@@ -181,7 +181,7 @@ Options:
 
 For example, if you want to use an amplicon from the default list called `list_primers.tsv`:
 ```
-family_tree_creation.sh -n Dasyatidae -t '../test/tax_table.tsv' -s '../test/seq_table.tsv' -a 12SMifish
+family_tree_creation.sh -n Dasyatidae -t 'test/tax_table.tsv' -s 'test/seq_table.tsv' -a 12SMifish
 ```
 The available amplicons are:
 
@@ -194,12 +194,12 @@ The available amplicons are:
 
 If you want to use your own amplicon:
 ```
-family_tree_creation.sh -n Dasyatidae -t '../test/tax_table.tsv' -s '../test/seq_table.tsv' -a 16SVert -f AGTCCCGAAATATAAT -r GCTGTTGTGCCCGAAG -g 16S -l 350 -o '../outgroup_sequences/petromyzon_marinus_12SMifish.fa'
+family_tree_creation.sh -n Dasyatidae -t 'test/${site}_${amplicon}_tax_table.tsv' -s 'test/${site}_${amplicon}_seq_table.tsv' -a 16SVert -f AGTCCCGAAATATAAT -r GCTGTTGTGCCCGAAG -g 16S -l 350 -o '../outgroup_sequences/petromyzon_marinus_12SMifish.fa'
 ```
 
 If you want to use a different maximum length of the amplicon than the one listed in `list_primers.tsv`:
 ```
-family_tree_creation.sh -n Dasyatidae -t '../test/tax_table.tsv' -s '../test/seq_table.tsv' -a CO1 -l 380 -o outgroup_sequences/petromyzon_marinus_16S.fa
+family_tree_creation.sh -n Dasyatidae -t 'test/${site}_${amplicon}_tax_table.tsv' -s 'test/${site}_${amplicon}_seq_table.tsv' -a CO1 -l 380 -o '../outgroup_sequences/petromyzon_marinus_16S.fa'
 ```
 > [!TIP]
 > Each parameter listed in the help message can be modified, even when using default amplicons, but if you want to change the primers' sequences, you need to change both, otherwise the default sequences will be used.
