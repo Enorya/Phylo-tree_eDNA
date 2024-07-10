@@ -66,6 +66,16 @@ done
 source ~/.bashrc
 conda activate tree-creation
 
+# family=$1
+# tax_table=$2 # '../../results_pacman_pip/eDNAexpeditions_batch1_samples/runs/${site}_${amplicon}/05-dwca/Full_tax_table_with_lsids.tsv'
+# seq_table=$3 # '../../results_pacman_pip/eDNAexpeditions_batch1_samples/runs/${site}_${amplicon}/05-dwca/DNA_extension_table.tsv'
+# amplicon=$4 # 12SMifish
+# primer_forward=$5 # GTCGGTAAAACTCGTGCCAGC
+# primer_reverse=$6 # CAAACTGGGATTAGATACCCCACTATG
+# gene_name=$7 # 12S
+# length_amp=$8 # 280
+# outgroup=$9 # petromyzon_marinus_12SMifish.fa
+
 echo -e "Checking the parameters given by the user to be sure that all needed informations are provided.\n"
 
 # Checking if family name available
@@ -247,9 +257,8 @@ else
 	if [ "$id" == "" ]
 	then
 		echo "This family does not exist in the NCBI taxonomy database, checking the corresponding name in the NCBI database..."
-		all_taxo=`echo $tax_table | sed 's/${site}/'*'/g'`
+		all_taxo=`echo ${tax_table} | sed 's/${site}/'*'/g'`
 		all_taxo=`echo $all_taxo | sed 's/${amplicon}/'$amplicon'/g'`
-		all_taxo=`echo $all_taxo | sed 's|../../|../|g'`
 		for file in `ls $all_taxo`
 		do
 			cat $file >> identified_ASVs_${amplicon}.tsv
@@ -273,7 +282,7 @@ else
 	while read line
 	do
         	genus=`echo $line`
-		grep "$genus" ../../tree_creation/all_nt_db_acc.txt | grep -E 'mitochondrion|mitochondrial' > ${genus}_mito.txt # retrieve all sequences containing "mitochondrial" or "mitochondrion" in their name
+		grep "$genus" ../all_nt_db_acc.txt | grep -E 'mitochondrion|mitochondrial' > ${genus}_mito.txt # retrieve all sequences containing "mitochondrial" or "mitochondrion" in their name
 		grep -E 'complete genome' ${genus}_mito.txt | sed 's/ >/\n>/g' | cut -d'.' -f1 | cut -d'>' -f2 >> ${family}_${amplicon}_acc-num.txt # from these sequences add in the final file the one containing "complete genome"
 		grep -E "$gene_name" ${genus}_mito.txt | sed 's/ >/\n>/g' | cut -d'.' -f1 | cut -d'>' -f2 >> ${family}_${amplicon}_acc-num.txt #from these sequences add in the final file the one containing "12S"
 		rm ${genus}_mito.txt
@@ -292,7 +301,7 @@ else
 
 	## Cleaning temporary files
 	rm -r ncbi_acc_files/
-	rm ${family}_acc-num.txt
+	rm ${family}_${amplicon}_acc-num.txt
 
 	## Put all sequences on one line each
 	awk '/^>/ { if(NR>1) print "";  printf("%s\n",$0); next; } { printf("%s",$0);}  END {printf("\n");}' < ${family}_${amplicon}_genus.fasta > ${family}_${amplicon}_genus_1l.fa
@@ -373,7 +382,7 @@ do
 	else
 		echo -e "File containing all identified ASVs till at least family level for $site is missing, starting to create it...\n\n----------\n"
 		mkdir ../${site}_${amplicon}/
-		taxo=`echo $tax_table | sed 's/${site}/'$site'/g'`
+		taxo=`echo "../$tax_table" | sed 's/${site}/'$site'/g'`
 		taxo=`echo $taxo | sed 's/${amplicon}/'$amplicon'/g'`
 		colTax=`awk -v RS='\t' '/taxonRank/{print NR; exit}' "$taxo"`
 		awk -F'\t' -v colTax=$colTax ' $colTax == "genus" || $colTax == "species" || $colTax == "family" { print $0 }' "$taxo" > ../${site}_${amplicon}/identified_ASVs.txt
@@ -384,7 +393,7 @@ do
 		echo -e "File containing all ASVs till at least family level for $family family of $site is available, retrieving the sequences from all sites...\n\n----------\n"
 	else
 		echo -e "File containing all ASVs till at least family level for $family family of $site is missing, starting to create it...\n\n----------\n"
-		taxo=`echo $tax_table | sed 's/${site}/'$site'/g'`
+		taxo=`echo "../${tax_table}" | sed 's/${site}/'$site'/g'`
                 taxo=`echo $taxo | sed 's/${amplicon}/'$amplicon'/g'`
 		colFam=`awk -v RS='\t' '/family/{print NR; exit}' "$taxo"`
 		awk -F'\t' -v f=$family -v name=$colFam ' $name == f { print $1 }' ../${site}_${amplicon}/identified_ASVs.txt > ../${site}_${amplicon}/${family}_${amplicon}_asv.txt
@@ -394,7 +403,7 @@ do
 			colSpe=`awk -v RS='\t' '/scientificName/{print NR; exit}' "$taxo"`
 			species=`grep -P "^$asv\t" $taxo | cut -f$colSpe | sed 's/ /_/g'`
 			echo ">"$asv"_"$species"_${site}" >> ../${site}_${amplicon}/${family}_${amplicon}_asv.fa
-			seq=`echo $seq_table | sed 's/${site}/'$site'/g'`
+			seq=`echo "../${seq_table}" | sed 's/${site}/'$site'/g'`
 			seq=`echo $seq | sed 's/${amplicon}/'$amplicon'/g'`
 			colSeq=`awk -v RS='\t' '/DNA_sequence/{print NR; exit}' "$seq"`
 			grep "${asv}_" $seq | head -n 1 | cut -f$colSeq >> ../${site}_${amplicon}/${family}_${amplicon}_asv.fa
