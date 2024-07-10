@@ -104,7 +104,7 @@ grep "^>" nt.fsa > all_nt_db_acc.txt
 
 You can use the following command to test the installation (it should take around 10 minutes to run):
 ```
-family_tree_creation.sh -n Dasyatidae -t '../test/${site}_${amplicon}_tax_table.tsv' -s '../test/${site}_${amplicon}_seq_table.tsv' -a 12SMifish
+family_tree_creation.sh -n Dasyatidae -t 'test/${site}_${amplicon}_tax_table.tsv' -s 'test/${site}_${amplicon}_seq_table.tsv' -a 12SMifish
 ```
 
 ## Preparation of the files
