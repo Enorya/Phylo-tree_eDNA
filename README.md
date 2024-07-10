@@ -98,7 +98,7 @@ grep "^>" nt.fsa > all_nt_db_acc.txt
 > [!NOTE]
 > A similar file is already provided in this repository but it might be good to redo this step if the file is too old.
 > 
-> If you want to use the provided version don't forget to decompress it first using `xz -d all_nt_db_acc.txt.xz` ( **/!\** you need to have xz installed)
+> If you want to use the provided version don't forget to decompress it first using `xz -d all_nt_db_acc.txt.xz` ( **/!\\** you need to have xz installed)
 > 
 > (last update: 19 June 2024 with 102960590 sequences)
 
