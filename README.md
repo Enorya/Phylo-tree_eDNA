@@ -1,4 +1,4 @@
-# Phylo-tree_eDNA
+# SAND-UP - Strange ASV Names Detector Using Phylogenetic trees
 Scripts to create phylogenetic trees based on taxonomic assignments of Environmental DNA (eDNA) data in order to **detect possible misassigned** ASVs or **refine the taxonomic assignment** of some ASVs.
 
 <p align="center">
